@@ -1,0 +1,25 @@
+.info__container {
+    color: white;
+    text-align: justify;
+}
+
+.info__container a {
+    color: var(--base-color)
+}
+
+#idiomas-eng div {
+    padding: 0px 10px;
+}
+
+#idiomas-eng div b {
+    color: var(--base-color);
+}
+
+.info__container li::marker {
+    content: "⇒";
+    color: var(--base-color);
+}
+
+.info__container li {
+    padding: 0px 10px;
+}

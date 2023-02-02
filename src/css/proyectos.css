@@ -1,0 +1,117 @@
+.proyectos__container {
+    color: white;
+    text-align: justify;
+}
+
+.proyectos__container div {
+    user-select: none;
+}
+
+.arrow {
+    display: inline-block;
+}
+
+.proyecto__open {
+    transform: rotate(90deg);
+    transition: transform 500ms;
+}
+
+.proyecto__close {
+    transform: rotate(0deg);
+    transition: transform 500ms;
+}
+
+.proyectos__textbook {
+    position: relative;
+}
+
+.textbook-info,
+.textbook-react-info,
+.chat-realtime-info,
+.cuatro-en-linea-info {
+    height: 0;
+    padding: 0px 20px;
+    transition: all 0.6s ease;
+    overflow: hidden;
+}
+
+.textbook-active {
+    height: 520px;
+}
+
+.textbook-react-active {
+    height: 180px;
+}
+
+.chat-realtime-active {
+    height: 450px;
+}
+
+.cuatro-en-linea-active {
+    height: 520px;
+}
+
+.proyectos__container a {
+    /*color: var(--base-color);*/
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.proyectos__container a:hover {
+    color: var(--base-color);
+    /*color: white;*/
+
+}
+
+.proyectos__container h2 {
+    display: inline-block;
+}
+
+.proyectos__container h2:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.proyectos__container h2,
+.proyectos__container h3,
+.arrow {
+    color: var(--base-color);
+    /*
+    color: #000;
+    text-shadow: 0px 0px 5px var(--base-color);*/
+    transition: all 0.4s ease;
+}
+
+#textbook-img-container,
+#chat-img-container,
+#cuatro-img-container {
+    display: flex;
+    align-content: center;
+}
+
+#textbook-img,
+#cuatro-img,
+#chat-img {
+    width: 400px;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+
+@media only screen and (max-width:800px) {
+    .textbook-active {
+        height: 560px;
+    }
+
+    .textbook-react-active {
+        height: 200px;
+    }
+
+    .chat-realtime-active {
+        height: 470px;
+    }
+
+    .cuatro-en-linea-active {
+        height: 560px;
+    }
+}

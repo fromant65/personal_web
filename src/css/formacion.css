@@ -1,0 +1,25 @@
+.formacion__container {
+    color: white;
+    text-align: justify;
+}
+
+.formacion__titulo {
+    text-align: center;
+}
+
+.formacion__subtitulo {
+    font-weight: 550;
+}
+
+.formacion__titulo,
+.formacion__subtitulo {
+    user-select: none;
+}
+
+.formacion__container b {
+    color: var(--base-color);
+}
+
+.formacion__container p {
+    padding: 0px 20px;
+}

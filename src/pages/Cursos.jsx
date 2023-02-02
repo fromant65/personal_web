@@ -1,0 +1,27 @@
+import React from "react";
+import "../css/cursos.css";
+
+const Cursos = () => {
+  return (
+    <div className="cursos__container">
+      <h1 className="cursos__titulo">Cursos realizados</h1>
+      <ul>
+        <li>
+          Curso de Desarrollo Web <b>(HTML, CSS, Javascript)</b> — Soy Dalto
+          (Youtube)
+        </li>
+        <li>
+          <b>Node.js</b> Full Course — Dave Gray (Youtube)
+        </li>
+        <li>
+          Full <b>React</b> Course 2020 — freeCodeCamp.org
+        </li>
+        <li>
+          Curso de <b>PYTHON</b> desde CERO — Soy Dalto (Youtube){" "}
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Cursos;

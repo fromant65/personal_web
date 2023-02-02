@@ -1,0 +1,17 @@
+.habilidades__container {
+    color: white;
+    text-align: justify;
+}
+
+.habilidades__container li::marker {
+    content: "⇒";
+    color: var(--base-color);
+}
+
+.habilidades__container li {
+    padding: 10px;
+}
+
+.habilidades__container b {
+    color: var(--base-color);
+}

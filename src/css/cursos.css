@@ -1,0 +1,21 @@
+.cursos__container {
+    color: white;
+    text-align: justify;
+}
+
+.cursos__titulo {
+    text-align: center;
+}
+
+.cursos__container li::marker {
+    content: "⇒";
+    color: var(--base-color);
+}
+
+.cursos__container li {
+    padding-left: 10px;
+}
+
+.cursos__container b {
+    color: var(--base-color);
+}
