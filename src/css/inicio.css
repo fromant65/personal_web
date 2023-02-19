@@ -21,14 +21,13 @@
     color: var(--base-color);
 }
 
-.inicio__foto {
-    border-radius: 50%;
+.inicio__logo {
+    display: block;
     width: 200px;
     height: 200px;
-    object-fit: cover;
 }
 
-.inicio__foto__container {
+.inicio__logo__container {
     width: 250px;
     height: 250px;
 }

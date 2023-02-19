@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/inicio.css";
-
+import Logo from "../components/Logo";
 const Inicio = () => {
   return (
     <div className="inicio__container">
@@ -9,8 +9,8 @@ const Inicio = () => {
           <h1 className="inicio__titulo">Hola, soy Fulvio Todone</h1>
           <h3 className="inicio__subtitulo">Desarrollador Web Fullstack</h3>
         </div>
-        <div className="inicio__foto__container">
-          <img src="foto.jpg" alt="foto" className="inicio__foto" />
+        <div className="inicio__logo__container">
+          <Logo className="inicio__logo"></Logo>
         </div>
       </div>
 
