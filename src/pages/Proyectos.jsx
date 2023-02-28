@@ -73,7 +73,7 @@ const Proyectos = () => {
   //Switch para visibilidad del apartado 4 en linea
   const [cuatro, setCuatro] = useState(false);
   return (
-    <div className="proyectos__container">
+    <div className="proyectos__container page">
       <h1>Proyectos personales</h1>
       <p>
         Aquí esta la lista de proyectos que he hecho. Da click encima de un

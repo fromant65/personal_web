@@ -3,7 +3,7 @@ import "../css/habilidades.css";
 
 const Habilidades = () => {
   return (
-    <div className="habilidades__container">
+    <div className="habilidades__container page">
       <ul>
         <li>HTML & CSS</li>
         <li>Javascript</li>

@@ -1,25 +1,82 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./../css/nav.css";
 
-const Nav = ({ pagina, index, setPagina, links }) => {
+const Nav = ({ pagina, setPagina, links }) => {
   function irAtras(index) {
-    if (index > 0) {
-      //console.log(index, pagina, "atras");
-      setPagina(links[index - 1]);
-      setPrevPage(links[index - 2]);
-      setNextPage(links[index]);
-    }
+    let prevPage =
+      links.indexOf(pagina) > 0 ? links[index - 1] : links[links.length - 1];
+    //console.log(index, pagina, "atras");
+    let currentPageContainer = document.querySelector(`.${pagina}__container`);
+    let prevPageContainer = document.querySelector(`.${prevPage}__container`);
+    currentPageContainer.animate(
+      [{ transform: "translateX(0)" }, { transform: "translateX(100vw)" }],
+      {
+        duration: 500,
+        fill: "forwards",
+        easing: "ease",
+      }
+    );
+    prevPageContainer.animate(
+      [{ transform: "translateX(-100vw)" }, { transform: "translateX(0)" }],
+      {
+        duration: 500,
+        fill: "forwards",
+        easing: "ease",
+      }
+    );
+    setPagina(links[links.indexOf(prevPage)]);
   }
   function irAdelante(index) {
-    if (index < 5) {
-      //console.log(index, pagina, "adelante");
-      setPagina(links[index + 1]);
-      setPrevPage(links[index]);
-      setNextPage(links[index + 2]);
-    }
+    let nextPage = links.indexOf(pagina) < 5 ? links[index + 1] : links[0];
+
+    let currentPageContainer = document.querySelector(`.${pagina}__container`);
+    let nextPageContainer = document.querySelector(`.${nextPage}__container`);
+    currentPageContainer.animate(
+      [{ transform: "translateX(0)" }, { transform: "translateX(-100vw)" }],
+      {
+        duration: 500,
+        fill: "forwards",
+        easing: "ease",
+      }
+    );
+    nextPageContainer.animate(
+      [{ transform: "translateX(100vw)" }, { transform: "translateX(0)" }],
+      {
+        duration: 500,
+        fill: "forwards",
+        easing: "ease",
+      }
+    );
+
+    setPagina(links[links.indexOf(nextPage)]);
+  }
+
+  function gotoPage(link) {
+    let nextPage = links[links.indexOf(link)];
+
+    let currentPageContainer = document.querySelector(`.${pagina}__container`);
+    let nextPageContainer = document.querySelector(`.${nextPage}__container`);
+    currentPageContainer.animate(
+      [{ transform: "translateX(0)" }, { transform: "translateX(-100vw)" }],
+      {
+        duration: 500,
+        fill: "forwards",
+        easing: "ease",
+      }
+    );
+    nextPageContainer.animate(
+      [{ transform: "translateX(100vw)" }, { transform: "translateX(0)" }],
+      {
+        duration: 500,
+        fill: "forwards",
+        easing: "ease",
+      }
+    );
+    setPagina(nextPage);
+    document.querySelector(".nav__menu").classList.remove("nav__open-menu");
+    setIsMenuOpen(false);
   }
 
   const switchMenu = () => {
@@ -30,124 +87,43 @@ const Nav = ({ pagina, index, setPagina, links }) => {
     }
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const [prevPage, setPrevPage] = useState(links[index - 1]);
-  const [nextPage, setNextPage] = useState(links[index + 1]);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   /*useEffect(() => {
     console.log(prevPage, nextPage);
   }, [prevPage, nextPage]);*/
+
   return (
     <div className="nav__container">
-      <Link
+      <button
         className="nav__return"
-        onClick={() => irAtras(index)}
-        to={prevPage ? `/${prevPage}` : "#"}
+        onClick={() => irAtras(links.indexOf(pagina))}
       >
         {"<"}
-      </Link>
+      </button>
       <div className="nav__dropdown" onClick={() => switchMenu()}>
-        {pagina}
+        {pagina.charAt(0).toUpperCase() + pagina.slice(1)}
       </div>
 
-      <Link
+      <button
         className="nav__forward"
-        onClick={() => irAdelante(index)}
-        to={nextPage ? `/${nextPage}` : "#"}
+        onClick={() => irAdelante(links.indexOf(pagina))}
       >
         {">"}
-      </Link>
+      </button>
       <div className="nav__menu">
-        {isMenuOpen ? (
-          <>
-            {pagina === "Inicio" ? (
-              ""
-            ) : (
-              <Link
-                className="nav__menu__link nav__menu__link-1"
-                to="/inicio"
-                onClick={() => {
-                  setPagina("inicio");
-                  setIsMenuOpen(!isMenuOpen);
-                }}
+        {links.map((link) => {
+          if (link != pagina) {
+            return (
+              <div
+                key={link}
+                className="nav__menu__link"
+                onClick={() => gotoPage(link)}
               >
-                Inicio
-              </Link>
-            )}
-            {pagina === "Proyectos" ? (
-              ""
-            ) : (
-              <Link
-                className="nav__menu__link nav__menu__link-2"
-                to="/proyectos"
-                onClick={() => {
-                  setPagina("proyectos");
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Proyectos
-              </Link>
-            )}
-            {pagina === "Formacion" ? (
-              ""
-            ) : (
-              <Link
-                className="nav__menu__link nav__menu__link-3"
-                to="/formacion"
-                onClick={() => {
-                  setPagina("formacion");
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Formacion
-              </Link>
-            )}
-            {pagina === "Cursos" ? (
-              ""
-            ) : (
-              <Link
-                className="nav__menu__link nav__menu__link-4"
-                to="/cursos"
-                onClick={() => {
-                  setPagina("cursos");
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Cursos
-              </Link>
-            )}
-            {pagina === "Habilidades" ? (
-              ""
-            ) : (
-              <Link
-                className="nav__menu__link nav__menu__link-5"
-                to="/habilidades"
-                onClick={() => {
-                  setPagina("habilidades");
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Habilidades
-              </Link>
-            )}
-            {pagina === "Info" ? (
-              ""
-            ) : (
-              <Link
-                className="nav__menu__link nav__menu__link-6"
-                to="/info"
-                onClick={() => {
-                  setPagina("info");
-                  setIsMenuOpen(!isMenuOpen);
-                }}
-              >
-                Info Extra
-              </Link>
-            )}
-          </>
-        ) : (
-          ""
-        )}
+                {link}
+              </div>
+            );
+          }
+        })}
       </div>
     </div>
   );

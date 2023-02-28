@@ -3,7 +3,7 @@ import "../css/cursos.css";
 
 const Cursos = () => {
   return (
-    <div className="cursos__container">
+    <div className="cursos__container page">
       <h1 className="cursos__titulo">Cursos realizados</h1>
       <ul>
         <li>

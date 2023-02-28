@@ -3,7 +3,7 @@ import "../css/formacion.css";
 
 const Formacion = () => {
   return (
-    <div className="formacion__container">
+    <div className="formacion__container page">
       <h1 className="formacion__titulo">Formación Académica</h1>
       <h2 className="formacion__subtitulo">Educación Secundaria</h2>
       <p>

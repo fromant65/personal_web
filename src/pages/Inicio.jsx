@@ -3,7 +3,7 @@ import "../css/inicio.css";
 import Logo from "../components/Logo";
 const Inicio = () => {
   return (
-    <div className="inicio__container">
+    <div className="inicio__container page">
       <div className="inicio__titulo__container">
         <div>
           <h1 className="inicio__titulo">Hola, soy Fulvio Todone</h1>

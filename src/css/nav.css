@@ -14,6 +14,7 @@
     font-weight: bolder;
     flex-grow: 1;
     text-align: center;
+    border: none;
 }
 
 .nav__return:hover,
@@ -42,7 +43,7 @@
     position: absolute;
     width: 100%;
     top: 100%;
-
+    transform: scale(0%);
 }
 
 .nav__menu__link {
