@@ -31,7 +31,9 @@
 
 .inicio__logo {
     display: block;
-    width: 100%;
+    width: fit-content;
+    margin: auto;
+    border: 1px solid black;
 }
 
 .inicio__logo__container {
@@ -57,11 +59,12 @@
         font-size: 35px;
     }
 
-    .inicio__logo__container {
-        width: 200px;
+    .inicio__info {
+        width: 100%;
     }
 
-    .inicio__logo {
-        width: 150px
+    .inicio__logo__container {
+        width: fit-content;
+        margin: auto;
     }
 }
