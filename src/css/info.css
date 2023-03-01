@@ -1,6 +1,7 @@
 .info__container {
     color: white;
     text-align: justify;
+    height: fit-content;
 }
 
 .info__container a {

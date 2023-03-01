@@ -1,67 +1,65 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import "./../css/proyectos.css";
 const Proyectos = () => {
+  function animateOpenClose(height1, height2, div) {
+    div.animate([{ height: `${height1}px` }, { height: `${height2}px` }], {
+      duration: 500,
+      easing: "ease",
+      fill: "forwards",
+    });
+  }
+
   function switchTextbook() {
     setTextbook(!textbook);
+    let info = document.querySelector(".textbook-info");
     if (!textbook) {
       document.getElementById("1arrow").classList.remove("proyecto__close");
       document.getElementById("1arrow").classList.add("proyecto__open");
-      document.querySelector(".textbook-info").classList.add("textbook-active");
+      animateOpenClose(0, info.scrollHeight, info);
     } else {
       document.getElementById("1arrow").classList.add("proyecto__close");
       document.getElementById("1arrow").classList.remove("proyecto__open");
-      document
-        .querySelector(".textbook-info")
-        .classList.remove("textbook-active");
+      animateOpenClose(info.scrollHeight, 0, info);
     }
   }
   function switchTextbookReact() {
     setTextbookReact(!textbookReact);
+    let info = document.querySelector(".textbook-react-info");
     if (!textbookReact) {
       document.getElementById("2arrow").classList.remove("proyecto__close");
       document.getElementById("2arrow").classList.add("proyecto__open");
-      document
-        .querySelector(".textbook-react-info")
-        .classList.add("textbook-react-active");
+      animateOpenClose(0, info.scrollHeight, info);
     } else {
       document.getElementById("2arrow").classList.add("proyecto__close");
       document.getElementById("2arrow").classList.remove("proyecto__open");
-      document
-        .querySelector(".textbook-react-info")
-        .classList.remove("textbook-react-active");
+      animateOpenClose(info.scrollHeight, 0, info);
     }
   }
   function switchChat() {
     setChat(!chat);
+    let info = document.querySelector(".chat-realtime-info");
     if (!chat) {
       document.getElementById("3arrow").classList.remove("proyecto__close");
       document.getElementById("3arrow").classList.add("proyecto__open");
-      document
-        .querySelector(".chat-realtime-info")
-        .classList.add("chat-realtime-active");
+      animateOpenClose(0, info.scrollHeight, info);
     } else {
       document.getElementById("3arrow").classList.add("proyecto__close");
       document.getElementById("3arrow").classList.remove("proyecto__open");
-      document
-        .querySelector(".chat-realtime-info")
-        .classList.remove("chat-realtime-active");
+      animateOpenClose(info.scrollHeight, 0, info);
     }
   }
   function switchCuatro() {
     setCuatro(!cuatro);
+    let info = document.querySelector(".cuatro-en-linea-info");
     if (!cuatro) {
       document.getElementById("4arrow").classList.remove("proyecto__close");
       document.getElementById("4arrow").classList.add("proyecto__open");
-      document
-        .querySelector(".cuatro-en-linea-info")
-        .classList.add("cuatro-en-linea-active");
+      animateOpenClose(0, info.scrollHeight, info);
     } else {
       document.getElementById("4arrow").classList.add("proyecto__close");
       document.getElementById("4arrow").classList.remove("proyecto__open");
-      document
-        .querySelector(".cuatro-en-linea-info")
-        .classList.remove("cuatro-en-linea-active");
+      animateOpenClose(info.scrollHeight, 0, info);
     }
   }
   //Switch para visibilidad del apartado textbook
@@ -87,15 +85,17 @@ const Proyectos = () => {
           Textbook
         </h2>
         <div className="textbook-info">
-          <p>
-            Textbook es un proyecto que busca simular una interfaz similar a la
-            de una red social. Posee diversas funciones como registro, log in y
-            log out, chat, perfil, busqueda de usuarios, creación de
-            publicaciones, etc. Está hecho en Node.js, utilizando Express y
-            MongoDB. El proyecto sigue en fase de desarrollo.
-          </p>
-          <div id="textbook-img-container">
-            <img src="textbook.PNG" alt="textbook" id="textbook-img" />
+          <div className="textbook-info-text-img">
+            <p className="textbook-info-text">
+              Textbook es un proyecto que busca simular una interfaz similar a
+              la de una red social. Posee diversas funciones como registro, log
+              in y log out, chat, perfil, busqueda de usuarios, creación de
+              publicaciones, etc. Está hecho en Node.js, utilizando Express y
+              MongoDB. El proyecto sigue en fase de desarrollo.
+            </p>
+            <div id="textbook-img-container">
+              <img src="textbook.PNG" alt="textbook" id="textbook-img" />
+            </div>
           </div>
 
           <h3>Repositorio del proyecto</h3>
@@ -142,15 +142,17 @@ const Proyectos = () => {
           Chat Realtime
         </h2>
         <div className="chat-realtime-info">
-          <p>
-            Esta aplicación web nos permite tener un chat en tiempo real y
-            diversas salas anónimas donde hablar. Esta hecho con Node.js y
-            utiliza Express y Socket.io.
-          </p>
-          <div id="chat-img-container">
-            <img src="chat-realtime.PNG" alt="chat" id="chat-img" />
+          <div className="chat-realtime-text-img">
+            <p className="chat-realtime-text">
+              Esta aplicación web nos permite tener un chat en tiempo real y
+              diversas salas anónimas donde hablar. Esta hecho con Node.js y
+              utiliza Express y Socket.io.
+            </p>
+            <div id="chat-img-container">
+              <img src="chat-realtime.PNG" alt="chat" id="chat-img" />
+            </div>
           </div>
-          <h3>Github del proyecto</h3>
+          <h3>Repositorio del proyecto</h3>
           <a href="https://github.com/fromant65/Realtime-Chat" target="_blank">
             Chat Realtime
           </a>
@@ -164,16 +166,19 @@ const Proyectos = () => {
           4 en línea
         </h2>
         <div className="cuatro-en-linea-info">
-          <p>
-            Esta app es el clásico juego 4 en linea donde dos jugadores ponen
-            fichas en un tablero e intentan alinear 4 para ganar. Utiliza
-            Socket.io para que los movimientos se puedan ver en tiempo real en
-            el tablero si se juega desde dos computadoras distintas. La
-            aplicación aún está en una fase temprana de desarrollo.
-          </p>
-          <div id="cuatro-img-container">
-            <img src="cuatro-en-raya.PNG" alt="cuatro" id="cuatro-img" />
+          <div className="cuatro-text-img">
+            <p className="cuatro-text">
+              Esta app es el clásico juego 4 en linea donde dos jugadores ponen
+              fichas en un tablero e intentan alinear 4 para ganar. Utiliza
+              Socket.io para que los movimientos se puedan ver en tiempo real en
+              el tablero si se juega desde dos computadoras distintas. La
+              aplicación aún está en una fase temprana de desarrollo.
+            </p>
+            <div id="cuatro-img-container">
+              <img src="cuatro-en-raya.PNG" alt="cuatro" id="cuatro-img" />
+            </div>
           </div>
+
           <h3>Repositorio del proyecto</h3>
           <a href="https://github.com/fromant65/4-en-Raya" target="_blank">
             4 en Línea

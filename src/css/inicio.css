@@ -1,11 +1,19 @@
 .inicio__container {
     color: #fff;
-
+    width: 90%;
+    margin: auto;
+    padding: 20px;
 }
 
 .inicio__titulo__container {
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.inicio__info {
+    width: 60%;
+    margin: auto;
 }
 
 .inicio__titulo {
@@ -23,13 +31,12 @@
 
 .inicio__logo {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 100%;
 }
 
 .inicio__logo__container {
-    width: 250px;
-    height: 250px;
+    width: 30%;
+    margin: auto;
 }
 
 .inicio__lista__container {
@@ -50,7 +57,11 @@
         font-size: 35px;
     }
 
-    .inicio__foto {
-        font-size: 20px;
+    .inicio__logo__container {
+        width: 200px;
+    }
+
+    .inicio__logo {
+        width: 150px
     }
 }

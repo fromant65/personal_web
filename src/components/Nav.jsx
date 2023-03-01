@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./../css/nav.css";
@@ -11,7 +11,10 @@ const Nav = ({ pagina, setPagina, links }) => {
     let currentPageContainer = document.querySelector(`.${pagina}__container`);
     let prevPageContainer = document.querySelector(`.${prevPage}__container`);
     currentPageContainer.animate(
-      [{ transform: "translateX(0)" }, { transform: "translateX(100vw)" }],
+      [
+        { transform: "translateX(0)", opacity: "1" },
+        { transform: "translateX(100vw)", opacity: "0" },
+      ],
       {
         duration: 500,
         fill: "forwards",
@@ -19,7 +22,10 @@ const Nav = ({ pagina, setPagina, links }) => {
       }
     );
     prevPageContainer.animate(
-      [{ transform: "translateX(-100vw)" }, { transform: "translateX(0)" }],
+      [
+        { transform: "translateX(-100vw)", opacity: "0" },
+        { transform: "translateX(0)", opacity: "1" },
+      ],
       {
         duration: 500,
         fill: "forwards",
@@ -34,7 +40,10 @@ const Nav = ({ pagina, setPagina, links }) => {
     let currentPageContainer = document.querySelector(`.${pagina}__container`);
     let nextPageContainer = document.querySelector(`.${nextPage}__container`);
     currentPageContainer.animate(
-      [{ transform: "translateX(0)" }, { transform: "translateX(-100vw)" }],
+      [
+        { transform: "translateX(0)", opacity: 1 },
+        { transform: "translateX(-100vw)", opacity: 0 },
+      ],
       {
         duration: 500,
         fill: "forwards",
@@ -42,7 +51,10 @@ const Nav = ({ pagina, setPagina, links }) => {
       }
     );
     nextPageContainer.animate(
-      [{ transform: "translateX(100vw)" }, { transform: "translateX(0)" }],
+      [
+        { transform: "translateX(100vw)", opacity: 0 },
+        { transform: "translateX(0)", opacity: 1 },
+      ],
       {
         duration: 500,
         fill: "forwards",
@@ -88,9 +100,6 @@ const Nav = ({ pagina, setPagina, links }) => {
     setIsMenuOpen(!isMenuOpen);
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  /*useEffect(() => {
-    console.log(prevPage, nextPage);
-  }, [prevPage, nextPage]);*/
 
   return (
     <div className="nav__container">

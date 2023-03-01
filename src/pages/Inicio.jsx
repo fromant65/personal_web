@@ -5,7 +5,7 @@ const Inicio = () => {
   return (
     <div className="inicio__container page">
       <div className="inicio__titulo__container">
-        <div>
+        <div className="inicio__info">
           <h1 className="inicio__titulo">Hola, soy Fulvio Todone</h1>
           <h3 className="inicio__subtitulo">Desarrollador Web Fullstack</h3>
         </div>

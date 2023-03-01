@@ -1,6 +1,9 @@
 .proyectos__container {
     color: white;
     text-align: justify;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
 }
 
 .proyectos__container div {
@@ -33,22 +36,67 @@
     padding: 0px 20px;
     transition: all 0.6s ease;
     overflow: hidden;
+    text-align: start;
 }
 
-.textbook-active {
-    height: 520px;
+.textbook-info-text-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
 }
 
-.textbook-react-active {
-    height: 180px;
+.textbook-info-text {
+    width: 45%;
 }
 
-.chat-realtime-active {
-    height: 450px;
+#textbook-img-container {
+    width: 45%;
 }
 
-.cuatro-en-linea-active {
-    height: 520px;
+#textbook-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.chat-realtime-text-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chat-realtime-text {
+    width: 30%;
+}
+
+#chat-img-container {
+    width: 65%;
+
+}
+
+#chat-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.cuatro-text-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cuatro-text {
+    width: 40%;
+}
+
+#cuatro-img-container {
+    width: 55%;
+}
+
+#cuatro-img {
+    width: 100%;
+    object-fit: contain;
 }
 
 .proyectos__container a {
@@ -89,29 +137,20 @@
     align-content: center;
 }
 
-#textbook-img,
-#cuatro-img,
-#chat-img {
-    width: 400px;
-    object-fit: scale-down;
-    margin: auto;
-}
-
 
 @media only screen and (max-width:800px) {
-    .textbook-active {
-        height: 560px;
+
+    .textbook-info-text,
+    .chat-realtime-text,
+    .cuatro-text {
+        width: 100%;
     }
 
-    .textbook-react-active {
-        height: 200px;
+    #textbook-img-container,
+    #chat-img-container,
+    #cuatro-img-container {
+        width: 100%;
     }
 
-    .chat-realtime-active {
-        height: 470px;
-    }
 
-    .cuatro-en-linea-active {
-        height: 560px;
-    }
 }
