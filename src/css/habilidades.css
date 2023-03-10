@@ -1,6 +1,7 @@
 .habilidades__container {
     color: white;
     text-align: justify;
+    width: 100%;
 }
 
 .habilidades__container li::marker {

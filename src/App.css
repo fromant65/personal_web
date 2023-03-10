@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     --bg-color: #3a4b4d;
     --menu-color: #0d5c63;
@@ -38,6 +42,7 @@ body {
     body {
         background-color: var(--bg-color);
         overflow-x: hidden;
+        width: 100vw;
     }
 
     .App {

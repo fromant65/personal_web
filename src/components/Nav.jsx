@@ -3,68 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import "./../css/nav.css";
 
-const Nav = ({ pagina, setPagina, links }) => {
-  function irAtras(index) {
-    let prevPage =
-      links.indexOf(pagina) > 0 ? links[index - 1] : links[links.length - 1];
-    //console.log(index, pagina, "atras");
-    let currentPageContainer = document.querySelector(`.${pagina}__container`);
-    let prevPageContainer = document.querySelector(`.${prevPage}__container`);
-    currentPageContainer.animate(
-      [
-        { transform: "translateX(0)", opacity: "1" },
-        { transform: "translateX(100vw)", opacity: "0" },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-    prevPageContainer.animate(
-      [
-        { transform: "translateX(-100vw)", opacity: "0" },
-        { transform: "translateX(0)", opacity: "1" },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-    setPagina(links[links.indexOf(prevPage)]);
-  }
-  function irAdelante(index) {
-    let nextPage = links.indexOf(pagina) < 5 ? links[index + 1] : links[0];
-
-    let currentPageContainer = document.querySelector(`.${pagina}__container`);
-    let nextPageContainer = document.querySelector(`.${nextPage}__container`);
-    currentPageContainer.animate(
-      [
-        { transform: "translateX(0)", opacity: 1 },
-        { transform: "translateX(-100vw)", opacity: 0 },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-    nextPageContainer.animate(
-      [
-        { transform: "translateX(100vw)", opacity: 0 },
-        { transform: "translateX(0)", opacity: 1 },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-
-    setPagina(links[links.indexOf(nextPage)]);
-  }
-
+const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
   function gotoPage(link) {
     let nextPage = links[links.indexOf(link)];
 
