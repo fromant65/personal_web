@@ -12,6 +12,8 @@ const Habilidades = () => {
         <li>MongoDB</li>
         <li>Node.js</li>
         <li>Express</li>
+        <li>SQL</li>
+        <li>Manejo básico de Python</li>
         <li>Pensamiento estratégico</li>
         <li>Resolución de problemas</li>
       </ul>

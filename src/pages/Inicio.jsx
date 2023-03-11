@@ -18,6 +18,7 @@ const Inicio = () => {
         <ul className="inicio__lista">
           <li>HTML, CSS, Javascript</li>
           <li>MERN Stack (MongoDB, ExpressJS, React, Node.js)</li>
+          <li>MySQL Databases</li>
           <li>Git & Github</li>
           <li>Rest APIs</li>
           <li>Técnico en Informática Profesional y Personal (IPS, Rosario)</li>

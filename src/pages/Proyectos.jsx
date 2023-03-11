@@ -63,7 +63,7 @@ const Proyectos = () => {
           <div className="images-crud-text-img">
             <div className="images-crud-text">
               Este proyecto permite guardar, eliminar y cargar imagenes dentro
-              de una galería Responsive. Las imágenes se guardan directamente en
+              de una galería responsive. Las imágenes se guardan directamente en
               el servidor y un link a ellas se guarda en una base de datos SQL
             </div>
             <div id="images-crud-img-container">
@@ -142,7 +142,7 @@ const Proyectos = () => {
             <p className="sorting-text">
               Esta app permite elegir entre algunos algoritmos de ordenamiento,
               genera una lista del largo indicado desordenada, y muestra paso a
-              paso como se ordena
+              paso como se ordena al presionar "Ordenar!"
             </p>
             <div id="sorting-img-container">
               <img src="sorting.png" alt="sorting" id="sorting-img" />

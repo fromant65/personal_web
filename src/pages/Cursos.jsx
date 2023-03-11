@@ -19,6 +19,9 @@ const Cursos = () => {
         <li>
           Curso de <b>PYTHON</b> desde CERO — Soy Dalto (Youtube){" "}
         </li>
+        <li>
+          W3Schools <b>SQL</b> Tutotial
+        </li>
       </ul>
     </div>
   );
