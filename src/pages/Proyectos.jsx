@@ -1,89 +1,22 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "./../css/proyectos.css";
-const Proyectos = () => {
-  function animateOpenClose(height1, height2, div) {
-    div.animate([{ height: `${height1}px` }, { height: `${height2}px` }], {
-      duration: 500,
-      easing: "ease",
-      fill: "forwards",
-    });
-  }
 
-  function switchTextbook() {
-    setTextbook(!textbook);
-    let info = document.querySelector(".textbook-info");
-    if (!textbook) {
-      document.getElementById("1arrow").classList.remove("proyecto__close");
-      document.getElementById("1arrow").classList.add("proyecto__open");
-      animateOpenClose(0, info.scrollHeight, info);
-    } else {
-      document.getElementById("1arrow").classList.add("proyecto__close");
-      document.getElementById("1arrow").classList.remove("proyecto__open");
-      animateOpenClose(info.scrollHeight, 0, info);
-    }
-  }
-  function switchTextbookReact() {
-    setTextbookReact(!textbookReact);
-    let info = document.querySelector(".textbook-react-info");
-    if (!textbookReact) {
-      document.getElementById("2arrow").classList.remove("proyecto__close");
-      document.getElementById("2arrow").classList.add("proyecto__open");
-      animateOpenClose(0, info.scrollHeight, info);
-    } else {
-      document.getElementById("2arrow").classList.add("proyecto__close");
-      document.getElementById("2arrow").classList.remove("proyecto__open");
-      animateOpenClose(info.scrollHeight, 0, info);
-    }
-  }
-  function switchChat() {
-    setChat(!chat);
-    let info = document.querySelector(".chat-realtime-info");
-    if (!chat) {
-      document.getElementById("3arrow").classList.remove("proyecto__close");
-      document.getElementById("3arrow").classList.add("proyecto__open");
-      animateOpenClose(0, info.scrollHeight, info);
-    } else {
-      document.getElementById("3arrow").classList.add("proyecto__close");
-      document.getElementById("3arrow").classList.remove("proyecto__open");
-      animateOpenClose(info.scrollHeight, 0, info);
-    }
-  }
-  function switchCuatro() {
-    setCuatro(!cuatro);
-    let info = document.querySelector(".cuatro-en-linea-info");
-    if (!cuatro) {
-      document.getElementById("4arrow").classList.remove("proyecto__close");
-      document.getElementById("4arrow").classList.add("proyecto__open");
-      animateOpenClose(0, info.scrollHeight, info);
-    } else {
-      document.getElementById("4arrow").classList.add("proyecto__close");
-      document.getElementById("4arrow").classList.remove("proyecto__open");
-      animateOpenClose(info.scrollHeight, 0, info);
-    }
-  }
-  //Switch para visibilidad del apartado textbook
-  const [textbook, setTextbook] = useState(false);
-  //Switch para visibilidad del apartado textbook react
-  const [textbookReact, setTextbookReact] = useState(false);
-  //Switch para visibilidad del apartado chat realtime
-  const [chat, setChat] = useState(false);
-  //Switch para visibilidad del apartado 4 en linea
-  const [cuatro, setCuatro] = useState(false);
+const proyectosLista = [
+  "textbook",
+  "galeria-backend",
+  "galeria-frontend",
+  "chat-realtime",
+  "cuatro-en-linea",
+  "sorting-visualizer",
+];
+
+const Proyectos = () => {
   return (
     <div className="proyectos__container page">
       <h1>Proyectos personales</h1>
-      <p>
-        Aquí esta la lista de proyectos que he hecho. Da click encima de un
-        proyecto para ver información sobre el mismo
-      </p>
-      <div className="proyectos__textbook" onClick={switchTextbook}>
-        <h2>
-          <div className="arrow" id="1arrow">
-            ►
-          </div>
-          Textbook
-        </h2>
+      <section className="proyectos__textbook">
+        <h2>Textbook</h2>
         <div className="textbook-info">
           <div className="textbook-info-text-img">
             <p className="textbook-info-text">
@@ -102,21 +35,11 @@ const Proyectos = () => {
           <a href="https://github.com/fromant65/Red_Social" target="_blank">
             Textbook
           </a>
-        </div>
-      </div>
-      <div className="proyectos__textbook__react" onClick={switchTextbookReact}>
-        <h2>
-          <div className="arrow" id="2arrow">
-            ►
-          </div>
-          Textbook con React
-        </h2>
-
-        <div className="textbook-react-info">
+          <h2>Version de React</h2>
           <p>
-            Esta es una versión de Textbook donde el frontend está hecho con
-            React. Tiene funcionalidades distintas a la otra versión, y también
-            sigue en fase de desarrollo.
+            Tambien desarrollé una versión de Textbook que utiliza React en el
+            Frontend, y tiene algunas características distintivas respecto a la
+            otra versión
           </p>
           <h3>Repositorios del proyecto</h3>
           <div>
@@ -133,14 +56,46 @@ const Proyectos = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="proyectos__chat-realtime" onClick={switchChat}>
-        <h2>
-          <div className="arrow" id="3arrow">
-            ►
+      </section>
+      <section className="proyectos__images-crud">
+        <h2>Images Crud SQL</h2>
+        <div className="images-crud-info">
+          <div className="images-crud-text-img">
+            <div className="images-crud-text">
+              Este proyecto permite guardar, eliminar y cargar imagenes dentro
+              de una galería Responsive. Las imágenes se guardan directamente en
+              el servidor y un link a ellas se guarda en una base de datos SQL
+            </div>
+            <div id="images-crud-img-container">
+              <img
+                src="images-crud.png"
+                alt="images-crud"
+                id="images-crud-img"
+              />
+            </div>
           </div>
-          Chat Realtime
-        </h2>
+
+          <h3>Repositorios del proyecto</h3>
+          <div>
+            <a
+              href="https://github.com/fromant65/images-crud-sql-front"
+              target="_blank"
+            >
+              Frontend
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://github.com/fromant65/images-crud-sql-back"
+              target="_blank"
+            >
+              Backend
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="proyectos__chat-realtime">
+        <h2>Chat Realtime</h2>
         <div className="chat-realtime-info">
           <div className="chat-realtime-text-img">
             <p className="chat-realtime-text">
@@ -157,14 +112,9 @@ const Proyectos = () => {
             Chat Realtime
           </a>
         </div>
-      </div>
-      <div className="proyectos__4-en-linea" onClick={switchCuatro}>
-        <h2>
-          <div className="arrow" id="4arrow">
-            ►
-          </div>
-          4 en línea
-        </h2>
+      </section>
+      <section className="proyectos__4-en-linea">
+        <h2>4 en línea</h2>
         <div className="cuatro-en-linea-info">
           <div className="cuatro-text-img">
             <p className="cuatro-text">
@@ -184,7 +134,29 @@ const Proyectos = () => {
             4 en Línea
           </a>
         </div>
-      </div>
+      </section>
+      <section className="proyectos__sorting-visualizer">
+        <h2>Sorting Visualizer</h2>
+        <div className="sorting-visualizer-info">
+          <div className="sorting-text-img">
+            <p className="sorting-text">
+              Esta app permite elegir entre algunos algoritmos de ordenamiento,
+              genera una lista del largo indicado desordenada, y muestra paso a
+              paso como se ordena
+            </p>
+            <div id="sorting-img-container">
+              <img src="sorting.png" alt="sorting" id="sorting-img" />
+            </div>
+          </div>
+          <h3>Repositorio del Proyecto</h3>
+          <a
+            href="https://github.com/fromant65/sorting-visualizer"
+            target="_blank"
+          >
+            Sorting Visualizer
+          </a>
+        </div>
+      </section>
     </div>
   );
 };

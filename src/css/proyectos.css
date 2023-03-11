@@ -1,42 +1,20 @@
 .proyectos__container {
     color: white;
-    text-align: justify;
     width: 90%;
     margin: auto;
     padding: 20px;
 }
 
-.proyectos__container div {
+.proyectos__container section {
     user-select: none;
-}
-
-.arrow {
-    display: inline-block;
-}
-
-.proyecto__open {
-    transform: rotate(90deg);
-    transition: transform 500ms;
-}
-
-.proyecto__close {
-    transform: rotate(0deg);
-    transition: transform 500ms;
+    padding: 2em;
+    margin-top: 2em;
+    background-color: var(--card-bg);
+    border-radius: 1em;
 }
 
 .proyectos__textbook {
     position: relative;
-}
-
-.textbook-info,
-.textbook-react-info,
-.chat-realtime-info,
-.cuatro-en-linea-info {
-    height: 0;
-    padding: 0px 20px;
-    transition: all 0.6s ease;
-    overflow: hidden;
-    text-align: start;
 }
 
 .textbook-info-text-img {
@@ -54,6 +32,25 @@
 }
 
 #textbook-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.images-crud-text-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.images-crud-text {
+    width: 45%;
+}
+
+#images-crud-img-container {
+    width: 45%;
+}
+
+#images-crud-img {
     width: 100%;
     object-fit: contain;
 }
@@ -79,7 +76,6 @@
     object-fit: contain;
 }
 
-
 .cuatro-text-img {
     display: flex;
     flex-wrap: wrap;
@@ -99,24 +95,42 @@
     object-fit: contain;
 }
 
+.sorting-text-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sorting-text {
+    width: 40%;
+}
+
+#sorting-img-container {
+    width: 55%;
+}
+
+#sorting-img {
+    width: 100%;
+    object-fit: contain;
+}
+
 .proyectos__container a {
     /*color: var(--base-color);*/
     color: white;
     transition: all 0.4s ease;
+    display: block;
 }
 
 .proyectos__container a:hover {
     color: var(--base-color);
-    /*color: white;*/
-
 }
 
 .proyectos__container h2 {
     display: inline-block;
 }
 
-.proyectos__container h2:hover {
-    cursor: pointer;
+.proyectos__container h2:hover,
+.proyectos__container h3:hover {
     color: #fff;
 }
 
@@ -132,7 +146,8 @@
 
 #textbook-img-container,
 #chat-img-container,
-#cuatro-img-container {
+#cuatro-img-container,
+#images-crud-img-container {
     display: flex;
     align-content: center;
 }
@@ -142,13 +157,17 @@
 
     .textbook-info-text,
     .chat-realtime-text,
-    .cuatro-text {
+    .cuatro-text,
+    .sorting-text,
+    .images-crud-text {
         width: 100%;
     }
 
     #textbook-img-container,
     #chat-img-container,
-    #cuatro-img-container {
+    #cuatro-img-container,
+    #sorting-img-container,
+    #images-crud-img-container {
         width: 100%;
     }
 

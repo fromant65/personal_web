@@ -103,7 +103,6 @@ function App() {
         easing: "ease",
       }
     );
-    console.log(links[links.indexOf(nextPage)]);
     setCurrentPage(links[links.indexOf(nextPage)]);
   }
 
