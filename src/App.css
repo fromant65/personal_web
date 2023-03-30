@@ -26,10 +26,16 @@ body {
     position: relative;
 }
 
+.pages {
+    max-height: 100%;
+}
+
 .page {
     position: absolute;
+    display: none;
     top: auto;
     left: 0;
+    height: 0;
     transform: translate(-100vw);
     opacity: 0;
     padding: 20px;
@@ -37,6 +43,8 @@ body {
 
 .inicio__container {
     opacity: 1;
+    height: 100%;
+    display: block;
 }
 
 @media only screen and (max-width:700px) {

@@ -20,7 +20,14 @@ const Cursos = () => {
           Curso de <b>PYTHON</b> desde CERO — Soy Dalto (Youtube){" "}
         </li>
         <li>
-          W3Schools <b>SQL</b> Tutotial
+          W3Schools <b>SQL</b> Tutorial
+        </li>
+        <li>
+          <b>Firebase</b> React Course - Pedro Tech (Youtube)
+        </li>
+        <li>
+          Curso de <b>Test Driven Development</b> con Javascript, React y Vitest
+          - Midulive (Youtube)
         </li>
       </ul>
     </div>

@@ -52,8 +52,14 @@ function App() {
     let prevPageContainer = document.querySelector(`.${prevPage}__container`);
     currentPageContainer.animate(
       [
-        { transform: "translateX(0)", opacity: "1" },
-        { transform: "translateX(100vw)", opacity: "0" },
+        {
+          transform: "translateX(0)",
+          opacity: "1",
+        },
+        {
+          transform: "translateX(100vw)",
+          opacity: "0",
+        },
       ],
       {
         duration: 500,
@@ -61,10 +67,22 @@ function App() {
         easing: "ease",
       }
     );
+    setTimeout(() => {
+      currentPageContainer.style.display = "none";
+    }, 500);
+    prevPageContainer.style.display = "block";
     prevPageContainer.animate(
       [
-        { transform: "translateX(-100vw)", opacity: "0" },
-        { transform: "translateX(0)", opacity: "1" },
+        {
+          transform: "translateX(-100vw)",
+          opacity: "0",
+          display: "none",
+        },
+        {
+          transform: "translateX(0)",
+          opacity: "1",
+          display: "block",
+        },
       ],
       {
         duration: 500,
@@ -72,6 +90,7 @@ function App() {
         easing: "ease",
       }
     );
+
     setCurrentPage(links[links.indexOf(prevPage)]);
   }
   function irAdelante(index) {
@@ -92,6 +111,10 @@ function App() {
         easing: "ease",
       }
     );
+    setTimeout(() => {
+      currentPageContainer.style.display = "none";
+    }, 500);
+    nextPageContainer.style.display = "block";
     nextPageContainer.animate(
       [
         { transform: "translateX(100vw)", opacity: 0 },
