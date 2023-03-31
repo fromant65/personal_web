@@ -153,7 +153,11 @@ const Proyectos = () => {
             href="https://github.com/fromant65/sorting-visualizer"
             target="_blank"
           >
-            Sorting Visualizer
+            Sorting Visualizer - Github
+          </a>
+          <h3>Link del proyecto</h3>
+          <a href="https://sorting-visualizer-fromant.netlify.app/">
+            Sorting Visualizer - App
           </a>
         </div>
       </section>
