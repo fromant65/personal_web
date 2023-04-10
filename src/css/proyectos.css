@@ -37,17 +37,17 @@
 }
 
 .images-crud-text-img {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto;
     gap: 20px
 }
 
-.images-crud-text {
-    width: 45%;
+.images-crud-link {
+    margin-top: 10px;
 }
 
-#images-crud-img-container {
-    width: 45%;
+.images-crud-repo {
+    display: inline !important;
 }
 
 #images-crud-img {

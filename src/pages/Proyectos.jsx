@@ -15,6 +15,105 @@ const Proyectos = () => {
   return (
     <div className="proyectos__container page">
       <h1>Proyectos personales</h1>
+      <h2>Páginas de proyectos</h2>
+      <section className="proyectos__images-crud">
+        <h2>Images Crud</h2>
+        <div className="images-crud-info">
+          <div className="images-crud-text-img">
+            <div className="images-crud-text">
+              Este proyecto permite guardar, eliminar y ver imagenes dentro de
+              una galería responsive. Uno puede hacerse una cuenta dentro de la
+              App y guardar sus imágenes dentro de su cuenta. Se puede ingresar
+              con Email o a traves de Google. Para subir una foto se debe buscar
+              dentro del almacenamiento del dispositivo, darle un nombre y hacer
+              click en "Upload Image".
+            </div>
+            <div id="images-crud-img-container">
+              <img
+                src="images-crud.png"
+                alt="images-crud"
+                id="images-crud-img"
+              />
+            </div>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://imagescrud-de0a6.web.app/"
+              className="images-crud-link"
+            >
+              Link al Proyecto
+            </a>
+          </div>
+          <h3>Repositorio</h3>
+          <div className="images-crud-info">
+            El repositorio de este proyecto se puede encontrar en el siguiente{" "}
+            <a
+              target="_blank"
+              href="https://github.com/fromant65/images-crud"
+              className="images-crud-repo"
+            >
+              link
+            </a>
+          </div>
+          <h3>Images Crud SQL</h3>
+          <div className="images-crud-info">
+            <div className="images-crud-text-img">
+              <div className="images-crud-text">
+                He hecho tambien una versión utilizando SQL para la base de
+                datos cuyos repositorios se encuentran en los siguientes links:
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/fromant65/images-crud-sql-front"
+                      target="_blank"
+                    >
+                      Frontend
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/fromant65/images-crud-sql-back"
+                      target="_blank"
+                    >
+                      Backend
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="proyectos__sorting-visualizer">
+        <h2>Sorting Visualizer</h2>
+        <div className="sorting-visualizer-info">
+          <div className="sorting-text-img">
+            <p className="sorting-text">
+              Esta app permite elegir entre algunos algoritmos de ordenamiento,
+              genera una lista del largo indicado desordenada, y muestra paso a
+              paso como se ordena al presionar "Ordenar!"
+            </p>
+            <div id="sorting-img-container">
+              <img src="sorting.png" alt="sorting" id="sorting-img" />
+            </div>
+          </div>
+          <h3>Link del proyecto</h3>
+          <a
+            href="https://sorting-visualizer-fromant.netlify.app/"
+            target="_blank"
+          >
+            Sorting Visualizer - App
+          </a>
+          <h3>Repositorio:</h3>
+          <a
+            href="https://github.com/fromant65/sorting-visualizer"
+            target="_blank"
+          >
+            Sorting Visualizer - Github
+          </a>
+        </div>
+      </section>
       <section className="proyectos__textbook">
         <h2>Textbook</h2>
         <div className="textbook-info">
@@ -57,43 +156,7 @@ const Proyectos = () => {
           </div>
         </div>
       </section>
-      <section className="proyectos__images-crud">
-        <h2>Images Crud SQL</h2>
-        <div className="images-crud-info">
-          <div className="images-crud-text-img">
-            <div className="images-crud-text">
-              Este proyecto permite guardar, eliminar y cargar imagenes dentro
-              de una galería responsive. Las imágenes se guardan directamente en
-              el servidor y un link a ellas se guarda en una base de datos SQL
-            </div>
-            <div id="images-crud-img-container">
-              <img
-                src="images-crud.png"
-                alt="images-crud"
-                id="images-crud-img"
-              />
-            </div>
-          </div>
 
-          <h3>Repositorios del proyecto</h3>
-          <div>
-            <a
-              href="https://github.com/fromant65/images-crud-sql-front"
-              target="_blank"
-            >
-              Frontend
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/fromant65/images-crud-sql-back"
-              target="_blank"
-            >
-              Backend
-            </a>
-          </div>
-        </div>
-      </section>
       <section className="proyectos__chat-realtime">
         <h2>Chat Realtime</h2>
         <div className="chat-realtime-info">
@@ -132,32 +195,6 @@ const Proyectos = () => {
           <h3>Repositorio del proyecto</h3>
           <a href="https://github.com/fromant65/4-en-Raya" target="_blank">
             4 en Línea
-          </a>
-        </div>
-      </section>
-      <section className="proyectos__sorting-visualizer">
-        <h2>Sorting Visualizer</h2>
-        <div className="sorting-visualizer-info">
-          <div className="sorting-text-img">
-            <p className="sorting-text">
-              Esta app permite elegir entre algunos algoritmos de ordenamiento,
-              genera una lista del largo indicado desordenada, y muestra paso a
-              paso como se ordena al presionar "Ordenar!"
-            </p>
-            <div id="sorting-img-container">
-              <img src="sorting.png" alt="sorting" id="sorting-img" />
-            </div>
-          </div>
-          <h3>Repositorio del Proyecto</h3>
-          <a
-            href="https://github.com/fromant65/sorting-visualizer"
-            target="_blank"
-          >
-            Sorting Visualizer - Github
-          </a>
-          <h3>Link del proyecto</h3>
-          <a href="https://sorting-visualizer-fromant.netlify.app/">
-            Sorting Visualizer - App
           </a>
         </div>
       </section>
