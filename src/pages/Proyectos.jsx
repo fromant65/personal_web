@@ -171,7 +171,7 @@ const Proyectos = () => {
             </div>
           </div>
           <h3>Link del proyecto</h3>
-          <a href="realtime-chat-fromant.up.railway.app" target="_blank">
+          <a href="https://realtime-chat-xqpq.onrender.com/" target="_blank">
             Chat Realtime
           </a>
           <h3>Repositorio del proyecto</h3>
