@@ -170,9 +170,13 @@ const Proyectos = () => {
               <img src="chat-realtime.PNG" alt="chat" id="chat-img" />
             </div>
           </div>
+          <h3>Link del proyecto</h3>
+          <a href="realtime-chat-fromant.up.railway.app" target="_blank">
+            Chat Realtime
+          </a>
           <h3>Repositorio del proyecto</h3>
           <a href="https://github.com/fromant65/Realtime-Chat" target="_blank">
-            Chat Realtime
+            Github
           </a>
         </div>
       </section>
