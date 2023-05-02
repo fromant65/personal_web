@@ -45,9 +45,6 @@ const Info = () => {
       <div className="info__contacto">
         <h2>Contacto</h2>
         <div>
-          Instagram: <a href="https://www.instagram.com/filvii_/">@filvii_</a>
-        </div>
-        <div>
           Linkedin:{" "}
           <a href="https://www.linkedin.com/in/fulvio-rom%C3%A1n-todone-23170a257/">
             Fulvio Román Todone
@@ -56,10 +53,13 @@ const Info = () => {
         <div>
           Gmail: fromant65@gmail.com {/*Hacer un form para emails quiza?*/}
         </div>
-        <div>Whatsapp: +54 9 341 507 3270</div>
         <div>
           Github: <a href="https://github.com/fromant65">fromant65</a>
         </div>
+        <div>
+          Instagram: <a href="https://www.instagram.com/filvii_/">@filvii_</a>
+        </div>
+        <div>Whatsapp: +54 9 341 507 3270</div>
       </div>
     </div>
   );

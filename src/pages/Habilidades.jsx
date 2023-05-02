@@ -13,6 +13,8 @@ const Habilidades = () => {
         <li>Node.js</li>
         <li>Express</li>
         <li>SQL</li>
+        <li>Firebase</li>
+        <li>Next.js</li>
         <li>Manejo básico de Python</li>
         <li>Pensamiento estratégico</li>
         <li>Resolución de problemas</li>

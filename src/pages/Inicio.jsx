@@ -21,6 +21,8 @@ const Inicio = () => {
           <li>MySQL Databases</li>
           <li>Git & Github</li>
           <li>Rest APIs</li>
+          <li>Firebase</li>
+          <li>Next.js</li>
           <li>Técnico en Informática Profesional y Personal (IPS, Rosario)</li>
           <li>Estudiando LCC en la UNR</li>
         </ul>
