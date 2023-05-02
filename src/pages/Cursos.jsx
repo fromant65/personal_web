@@ -29,6 +29,9 @@ const Cursos = () => {
           Curso de <b>Test Driven Development</b> con Javascript, React y Vitest
           - Midulive (Youtube)
         </li>
+        <li>
+          <b>Next.js</b> React Framework Course - freeCodeCamp.org (Youtube)
+        </li>
       </ul>
     </div>
   );
