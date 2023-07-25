@@ -14,18 +14,18 @@ const Inicio = () => {
         </div>
       </div>
 
-      <div className="inicio__lista__container">
-        <ul className="inicio__lista">
-          <li>HTML, CSS, Javascript</li>
-          <li>MERN Stack (MongoDB, ExpressJS, React, Node.js)</li>
-          <li>MySQL Databases</li>
-          <li>Git & Github</li>
-          <li>Rest APIs</li>
-          <li>Firebase</li>
-          <li>Next.js</li>
-          <li>Técnico en Informática Profesional y Personal (IPS, Rosario)</li>
-          <li>Estudiando LCC en la UNR</li>
-        </ul>
+      {/*Cambiar esta lista por una descripción corta que resuma estos datos */}
+      <div className="inicio__resumen">
+        Soy un <b>Desarrollador Web Fullstack</b> con conocimientos de
+        tecnologías como <b>HTML</b>, <b>CSS</b> y <b>Javascript</b>, además de{" "}
+        <b>Git y Github</b>. El principal Stack con el que desarrollo es{" "}
+        <b>MERN (MongoDB, ExpressJS, React, Node.js)</b>. También sé manejar
+        bases de datos estructuradas <b>(SQL)</b>. Me especializo en el
+        desarrollo de <b>Rest APIs</b>. Otras herramientas que conozco son{" "}
+        <b>Firebase</b> y <b>Next.js</b>. Soy{" "}
+        <b>Técnico en Informática Profesional y Personal</b> del IPS, Rosario.
+        Estoy cursando <b>Ciencias de la Computación</b> en la Universidad
+        Nacional de Rosario.
       </div>
     </div>
   );

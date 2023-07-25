@@ -4,8 +4,40 @@
     height: fit-content;
 }
 
+.info__container h2 {
+    color: var(--main2);
+}
+
 .info__container a {
-    color: var(--base-color)
+    color: var(--main2)
+}
+
+.info__reconocimientos__lista div {
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+}
+
+.info__reconocimiento p b {
+    color: var(--main2);
+}
+
+.info-logo {
+    height: 50px;
+}
+
+.info-idioma-flag {
+    height: 1.5rem;
+}
+
+#idiomas-esp,
+#idiomas-eng,
+.info__contacto div {
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 10px;
 }
 
 #idiomas-eng div {
@@ -13,14 +45,10 @@
 }
 
 #idiomas-eng div b {
-    color: var(--base-color);
+    color: var(--main2);
 }
 
-.info__container li::marker {
-    content: "⇒";
-    color: var(--base-color);
-}
-
-.info__container li {
-    padding: 0px 10px;
+.info__contact__logo {
+    height: 2rem;
+    margin-right: 2rem;
 }

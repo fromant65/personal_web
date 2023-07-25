@@ -1,5 +1,5 @@
 .inicio__container {
-    color: #fff;
+    color: var(--text-color);
     width: 90%;
     margin: auto;
     padding: 20px;
@@ -26,7 +26,7 @@
 .inicio__subtitulo {
     font-size: 25px;
     text-align: center;
-    color: var(--base-color);
+    color: var(--main3);
 }
 
 .inicio__logo {
@@ -41,17 +41,16 @@
     margin: auto;
 }
 
-.inicio__lista__container {
-    display: flex;
+.inicio__resumen {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    line-height: 2rem;
 }
 
-.inicio__lista__container li {
-    padding: 5px;
-}
-
-.inicio__lista__container li::marker {
-    content: "⇒";
-    color: var(--base-color);
+.inicio__resumen b {
+    color: var(--main3);
 }
 
 @media only screen and (max-width:800px) {

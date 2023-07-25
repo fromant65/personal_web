@@ -1,24 +1,35 @@
-import React, { useRef } from "react";
-import { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import "./../css/nav.css";
 
 const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
   function gotoPage(link) {
     let nextPage = links[links.indexOf(link)];
-
     let currentPageContainer = document.querySelector(`.${pagina}__container`);
     let nextPageContainer = document.querySelector(`.${nextPage}__container`);
     currentPageContainer.animate(
-      [{ transform: "translateX(0)" }, { transform: "translateX(-100vw)" }],
+      [
+        { transform: "translateX(0)", opacity: "1" },
+        { transform: "translateX(-100vw)", opacity: "0" },
+      ],
       {
         duration: 500,
         fill: "forwards",
         easing: "ease",
       }
     );
+
+    setTimeout(() => {
+      currentPageContainer.style.display = "none";
+    }, 500);
+    nextPageContainer.style.display = "block";
+
     nextPageContainer.animate(
-      [{ transform: "translateX(100vw)" }, { transform: "translateX(0)" }],
+      [
+        { transform: "translateX(100vw)", opacity: "0", display: "none" },
+        { transform: "translateX(0)", opacity: "1", display: "block" },
+      ],
       {
         duration: 500,
         fill: "forwards",
@@ -40,13 +51,18 @@ const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
   };
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  function capitalize(page) {
+    let capitalizedPage = page.replace(/^\w/, (c) => c.toUpperCase());
+    return capitalizedPage;
+  }
+
   return (
     <div className="nav__container">
       <button
         className="nav__return"
         onClick={() => irAtras(links.indexOf(pagina))}
       >
-        {"<"}
+        <FaArrowAltCircleLeft size={30} />
       </button>
       <div className="nav__dropdown" onClick={() => switchMenu()}>
         {pagina.charAt(0).toUpperCase() + pagina.slice(1)}
@@ -56,7 +72,7 @@ const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
         className="nav__forward"
         onClick={() => irAdelante(links.indexOf(pagina))}
       >
-        {">"}
+        <FaArrowAltCircleRight size={30} />
       </button>
       <div className="nav__menu">
         {links.map((link) => {
@@ -67,7 +83,7 @@ const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
                 className="nav__menu__link"
                 onClick={() => gotoPage(link)}
               >
-                {link}
+                {capitalize(link)}
               </div>
             );
           }

@@ -2,17 +2,20 @@
     color: white;
     text-align: justify;
     width: 100%;
+    padding: 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.habilidades__container li::marker {
-    content: "⇒";
-    color: var(--base-color);
+.habilidad-container {
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    width: fit-content;
 }
 
-.habilidades__container li {
-    padding: 10px;
-}
-
-.habilidades__container b {
-    color: var(--base-color);
+.habilidad-logo {
+    height: 100px;
 }

@@ -2,13 +2,14 @@
     display: flex;
     position: relative;
     z-index: 1000;
+    color: var(--text-color);
 }
 
 .nav__return,
 .nav__forward {
     padding: 20px;
     background-color: var(--bg-color);
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
@@ -18,13 +19,14 @@
 }
 
 .nav__return:hover,
-.nav__forward:hover {
-    background-color: var(--hover-color);
-    color: #fff;
+.nav__forward:hover,
+.nav__dropdown:hover {
+    background-color: var(--bg-light);
+    cursor: pointer;
+    color: var(--main1);
 }
 
 .nav__dropdown {
-
     padding: 20px 0px;
     background-color: var(--bg-color);
     flex-grow: 10;
@@ -33,17 +35,12 @@
     user-select: none;
 }
 
-.nav__dropdown:hover {
-    background-color: var(--hover-color);
-    cursor: pointer;
-    color: #fff;
-}
-
 .nav__menu {
     position: absolute;
     width: 100%;
     top: 100%;
     transform: scale(0%);
+    color: var(--text-color);
 }
 
 .nav__menu__link {
@@ -51,15 +48,25 @@
     display: block;
     padding: 20px;
     background-color: var(--bg-color);
-    color: #000;
+    color: var(--text-color);
     text-decoration: none;
     text-align: center;
 
 }
 
-.nav__menu__link:hover {
-    background-color: var(--hover-color);
-    color: #fff;
+.nav__menu__link:hover:nth-child(3n) {
+    background-color: var(--bg-light);
+    color: var(--main1);
+}
+
+.nav__menu__link:hover:nth-child(3n+1) {
+    background-color: var(--bg-light);
+    color: var(--main2);
+}
+
+.nav__menu__link:hover:nth-child(3n+2) {
+    background-color: var(--bg-light);
+    color: var(--main3);
 }
 
 .nav__open-menu {
@@ -70,10 +77,6 @@
 @keyframes growDown {
     0% {
         transform: scaleY(0)
-    }
-
-    80% {
-        transform: scaleY(1.1)
     }
 
     100% {

@@ -7,8 +7,17 @@
     text-align: center;
 }
 
+.formacion__card {
+    background-color: var(--bg-light);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
 .formacion__subtitulo {
     font-weight: 550;
+    padding: 5px;
+    border-bottom: 1px solid var(--text-color);
 }
 
 .formacion__titulo,
@@ -17,7 +26,7 @@
 }
 
 .formacion__container b {
-    color: var(--base-color);
+    color: var(--dark1);
 }
 
 .formacion__container p {

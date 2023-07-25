@@ -3,14 +3,21 @@ html {
 }
 
 body {
-    --bg-color: #3a4b4d;
-    --card-bg: #293a3c;
-    --menu-color: #0d5c63;
-    --hover-color: #1d6c73;
-    --base-color: #138690;
-    --sec-color: #7db8c5;
-    --ter-color: #afece7;
-    --cuar-color: #81f499;
+    /*
+    Colores: para los fondos y tipografías se van a usar colores neutrales
+    Los colores main y dark se van a usar para cartas y contenido
+    */
+    --bg-color: #101010;
+    --bg-light: #282828;
+    --text-color: #f8f8f8;
+    --text-color2: #e8e8e8;
+    --main1: #75EBB5;
+    --main2: #E6B170;
+    --main3: #6E65E6;
+    --dark1: #5A997D;
+    --dark2: #b9813c;
+    --dark3: #423C99;
+
     background-color: var(--bg-color);
     padding: 0;
     margin: 0;

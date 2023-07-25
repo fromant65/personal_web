@@ -7,16 +7,23 @@
     text-align: center;
 }
 
-.cursos__container li::marker {
-    content: "⇒";
-    color: var(--base-color);
-}
-
-.cursos__container li {
-    padding: 20px;
-    padding-left: 10px;
-}
-
 .cursos__container b {
-    color: var(--base-color);
+    color: var(--main3);
+}
+
+.cursos__lista {
+    padding: 20px;
+}
+
+.cursos__item {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--bg-light);
+}
+
+.cursos__logo {
+    height: 50px;
+    padding: 0.40rem;
+    margin: 0.40rem;
 }
