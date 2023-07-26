@@ -9,6 +9,7 @@ const proyectosLista = [
   "chat-realtime",
   "cuatro-en-linea",
   "sorting-visualizer",
+  "conway-life",
 ];
 
 const Proyectos = () => {
@@ -93,6 +94,16 @@ const Proyectos = () => {
             "Esta app es el clásico juego 4 en linea donde dos jugadores ponen fichas en un tablero e intentan alinear 4 para ganar. Utiliza Socket.io para que los movimientos se puedan ver en tiempo real en el tablero si se juega desde dos computadoras distintas. La aplicación aún está en una fase temprana de desarrollo."
           }
           repositorio={"https://github.com/fromant65/4-en-Raya"}
+        />
+      </section>
+      <section className="proyectos__conway-life">
+        <ProyectLayout
+          titulo={"Conway Life"}
+          descripcion={
+            "Esta app es una simulación del juego de la vida de Conway hecha con React que corre 100 generaciones desde una posición aleatoria y vuelve a generar una nueva posición aleatoria."
+          }
+          link={"https://conwaylife.netlify.app/"}
+          repositorio={"https://github.com/fromant65/conwaylife"}
         />
       </section>
     </div>
