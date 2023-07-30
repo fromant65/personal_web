@@ -10,6 +10,7 @@ import {
   SiFirebase,
   SiJest,
   SiNextdotjs,
+  SiTypescript,
 } from "react-icons/si";
 
 const Cursos = () => {
@@ -69,6 +70,13 @@ const Cursos = () => {
           <b>Next.js</b> React Framework Course - freeCodeCamp.org (Youtube)
           <div>
             <SiNextdotjs className="cursos__item__logo" size={50} />
+          </div>
+        </div>
+        <div className="cursos__item">
+          <b>Typescript</b> Tutorial for Beginners - Programming with Mosh
+          (Youtube)
+          <div>
+            <SiTypescript className="cursos__item__logo" size={50} />
           </div>
         </div>
       </div>
