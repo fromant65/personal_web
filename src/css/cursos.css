@@ -22,6 +22,12 @@
     background-color: var(--bg-light);
 }
 
+.cursos__item__logo {
+    padding: 0.4rem;
+    margin: 0.4rem;
+    color: var(--main3);
+}
+
 .cursos__logo {
     height: 50px;
     padding: 0.40rem;

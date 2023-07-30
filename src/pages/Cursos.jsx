@@ -1,5 +1,16 @@
 import React from "react";
 import "../css/cursos.css";
+import { FaHtml5, FaNodeJs, FaReact, FaPython } from "react-icons/fa";
+import { DiCss3 } from "react-icons/di";
+import { TbBrandJavascript } from "react-icons/tb";
+import {
+  SiExpress,
+  SiMongodb,
+  SiMysql,
+  SiFirebase,
+  SiJest,
+  SiNextdotjs,
+} from "react-icons/si";
 
 const Cursos = () => {
   return (
@@ -10,92 +21,54 @@ const Cursos = () => {
           Curso de Desarrollo Web <b>(HTML, CSS, Javascript)</b> — Soy Dalto
           (Youtube)
           <div>
-            <img
-              className="cursos__logo"
-              src="/habilidades/HTML.png"
-              alt="html"
-            />
-            <img
-              className="cursos__logo"
-              src="/habilidades/CSS.png"
-              alt="css"
-            />
-            <img
-              className="cursos__logo"
-              src="/habilidades/Javascript.png"
-              alt="js"
-            />
+            <FaHtml5 className="cursos__item__logo" size={50} />
+            <DiCss3 className="cursos__item__logo" size={50} />
+            <TbBrandJavascript className="cursos__item__logo" size={50} />
           </div>
         </div>
         <div className="cursos__item">
           <b>Node.js</b> Full Course — Dave Gray (Youtube)
           <div>
-            <img
-              className="cursos__logo"
-              style={{ background: "#fff" }}
-              src="/habilidades/nodejs.png"
-              alt="js"
-            />
-            <img
-              className="cursos__logo"
-              src="/habilidades/express.png"
-              alt="js"
-            />
-            <img
-              className="cursos__logo"
-              src="/habilidades/mongodb.png"
-              alt="js"
-            />
+            <FaNodeJs className="cursos__item__logo" size={50} />
+            <SiExpress className="cursos__item__logo" size={50} />
+            <SiMongodb className="cursos__item__logo" size={50} />
           </div>
         </div>
         <div className="cursos__item">
           Full <b>React</b> Course 2020 — freeCodeCamp.org
           <div>
-            <img
-              className="cursos__logo"
-              src="/habilidades/React.png"
-              alt="js"
-            />
+            <FaReact className="cursos__item__logo" size={50} />
           </div>
         </div>
         <div className="cursos__item">
           Curso de <b>PYTHON</b> desde CERO — Soy Dalto (Youtube){" "}
           <div>
-            <img
-              className="cursos__logo"
-              src="/habilidades/python.png"
-              alt="js"
-            />
+            <FaPython className="cursos__item__logo" size={50} />
           </div>
         </div>
         <div className="cursos__item">
           W3Schools <b>SQL</b> Tutorial
           <div>
-            <img className="cursos__logo" src="/habilidades/SQL.png" alt="js" />
+            <SiMysql className="cursos__item__logo" size={50} />
           </div>
         </div>
         <div className="cursos__item">
           <b>Firebase</b> React Course - Pedro Tech (Youtube)
           <div>
-            <img
-              className="cursos__logo"
-              src="/habilidades/Firebase.png"
-              alt="js"
-            />
+            <SiFirebase className="cursos__item__logo" size={50} />
           </div>
         </div>
         <div className="cursos__item">
           Curso de <b>Test Driven Development</b> con Javascript, React y Vitest
           - Midulive (Youtube)
+          <div>
+            <SiJest className="cursos__item__logo" size={50} />
+          </div>
         </div>
         <div className="cursos__item">
           <b>Next.js</b> React Framework Course - freeCodeCamp.org (Youtube)
           <div>
-            <img
-              className="cursos__logo"
-              src="/habilidades/nextjs.png"
-              alt="js"
-            />
+            <SiNextdotjs className="cursos__item__logo" size={50} />
           </div>
         </div>
       </div>

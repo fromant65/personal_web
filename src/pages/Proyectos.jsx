@@ -2,20 +2,17 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import "./../css/proyectos.css";
 import ProyectLayout from "../components/ProyectLayout";
-const proyectosLista = [
-  "textbook",
-  "galeria-backend",
-  "galeria-frontend",
-  "chat-realtime",
-  "cuatro-en-linea",
-  "sorting-visualizer",
-  "conway-life",
-];
+// import proyectos from "../data/projects.json";
+// La DB de projects.json servirá para la versión en inglés del Portfolio
 
 const Proyectos = () => {
   return (
     <div className="proyectos__container page">
       <h1>Proyectos personales</h1>
+      <p>
+        Puede hacer click en los iconos de enlace y GitHub para acceder a las
+        páginas de los proyectos y sus repositorios respectivamente.
+      </p>
       <section className="proyectos__images-crud">
         <ProyectLayout
           titulo="Images Crud"
@@ -76,7 +73,6 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/textbookBack"}
         />
       </section>
-
       <section className="proyectos__chat-realtime">
         <ProyectLayout
           titulo={"Chat Realtime"}
@@ -104,6 +100,46 @@ const Proyectos = () => {
           }
           link={"https://conwaylife.netlify.app/"}
           repositorio={"https://github.com/fromant65/conwaylife"}
+        />
+      </section>
+      <section>
+        <ProyectLayout
+          titulo={"Japanese Sentence Generator"}
+          descripcion={
+            "Este proyecto es un script que nos permite generar palabras y oraciones en japonés con sus respectivas lecturas en hiragana y traducciones al inglés. Desarrollé este proyecto como una herramienta para mi propio aprendizaje del lenguaje."
+          }
+          repositorio={
+            "https://github.com/fromant65/japanese_sentence_generator"
+          }
+        />
+      </section>
+      <section>
+        <ProyectLayout
+          titulo={"Password Generator"}
+          descripcion={
+            "Este proyecto es una página web simple que genera contraseñas seguras en base al input del usuario."
+          }
+          link={"https://password-generator-fromant.netlify.app/"}
+          repositorio={"https://github.com/fromant65/Password_Generator/"}
+        />
+      </section>
+      <section>
+        <ProyectLayout
+          titulo={"Simulador de Torneos"}
+          descripcion={
+            'Esta app es una página web simple que genera un fixture de un torneo con una determinada cantidad de equipos con "fuerza" asignada aleatoriamente y permite simular el torneo. Los equipos con más fuerza tienen mas chances de ganar el torneo.'
+          }
+          link={"https://torneo-simulador-fromant.netlify.app/"}
+          repositorio={"https://github.com/fromant65/Torneo_Simulador"}
+        />
+      </section>
+      <section>
+        <ProyectLayout
+          titulo={"Calendario"}
+          descripcion={
+            "Esta página es una app simple de calendario hecha con React"
+          }
+          repositorio={"https://github.com/fromant65/calendar"}
         />
       </section>
     </div>
