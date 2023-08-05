@@ -9,10 +9,6 @@ const Proyectos = () => {
   return (
     <div className="proyectos__container page">
       <h1>Proyectos personales</h1>
-      <p>
-        Puede hacer click en los iconos de enlace y GitHub para acceder a las
-        páginas de los proyectos y sus repositorios respectivamente.
-      </p>
       <section className="proyectos__images-crud">
         <ProyectLayout
           titulo="Images Crud"
@@ -28,15 +24,25 @@ const Proyectos = () => {
         <ProyectLayout
           titulo="Version SQL - Frontend"
           descripcion="He hecho tambien una versión utilizando SQL para la base de
-                datos. El repositorio del frontend se encuentra en el siguientes link:"
+                datos. El repositorio del frontend se encuentra en el siguiente link:"
           repositorio={"https://github.com/fromant65/images-crud-sql-front"}
         />
         <ProyectLayout
           titulo={"Version SQL - Backend"}
           descripcion={
-            "El repositorio del backend se encuentra en el siguientes link:"
+            "El repositorio del backend se encuentra en el siguiente link:"
           }
           repositorio={"https://github.com/fromant65/images-crud-sql-back"}
+        />
+      </section>
+      <section className="proyectos__chat-realtime">
+        <ProyectLayout
+          titulo={"Chat Realtime"}
+          descripcion={
+            "Esta aplicación web nos permite tener un chat en tiempo real y diversas salas anónimas donde hablar. Está hecho con Node.js y utiliza Express y Socket.io."
+          }
+          link={"https://realtime-chat-xqpq.onrender.com/"}
+          repositorio={"https://github.com/fromant65/Realtime-Chat"}
         />
       </section>
       <section className="proyectos__sorting-visualizer">
@@ -73,16 +79,7 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/textbookBack"}
         />
       </section>
-      <section className="proyectos__chat-realtime">
-        <ProyectLayout
-          titulo={"Chat Realtime"}
-          descripcion={
-            "Esta aplicación web nos permite tener un chat en tiempo real y diversas salas anónimas donde hablar. Esta hecho con Node.js y utiliza Express y Socket.io."
-          }
-          link={"https://realtime-chat-xqpq.onrender.com/"}
-          repositorio={"https://github.com/fromant65/Realtime-Chat"}
-        />
-      </section>
+
       <section className="proyectos__4-en-linea">
         <ProyectLayout
           titulo={"4 en línea"}
@@ -133,6 +130,7 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/Torneo_Simulador"}
         />
       </section>
+      {/*
       <section>
         <ProyectLayout
           titulo={"Calendario"}
@@ -142,6 +140,7 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/calendar"}
         />
       </section>
+      */}
     </div>
   );
 };

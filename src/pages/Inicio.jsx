@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/inicio.css";
 import Logo from "../components/Logo";
+import LinksContacto from "../components/LinksContacto";
 const Inicio = () => {
   return (
     <div className="inicio__container page">
@@ -16,16 +17,26 @@ const Inicio = () => {
 
       {/*Cambiar esta lista por una descripción corta que resuma estos datos */}
       <div className="inicio__resumen">
-        Soy un <b>Desarrollador Web Fullstack</b> con conocimientos de
-        tecnologías como <b>HTML</b>, <b>CSS</b> y <b>Javascript</b>, además de{" "}
-        <b>Git y Github</b>. El principal Stack con el que desarrollo es{" "}
-        <b>MERN (MongoDB, ExpressJS, React, Node.js)</b>. También sé manejar
-        bases de datos estructuradas <b>(SQL)</b>. Me especializo en el
-        desarrollo de <b>Rest APIs</b>. Otras herramientas que conozco son{" "}
-        <b>Firebase</b> y <b>Next.js</b>. Soy{" "}
-        <b>Técnico en Informática Profesional y Personal</b> del IPS, Rosario.
-        Estoy cursando <b>Ciencias de la Computación</b> en la Universidad
-        Nacional de Rosario.
+        <p>
+          Soy un <b>Desarrollador Web</b> apasionado, con un talento especial
+          para resolver problemas complejos y crear soluciones innovadoras. Mi
+          experiencia y <b>reconocimientos académicos en olimpiadas</b> me ha
+          brindado una <b>base sólida en lógica y razonamiento</b>, lo que me
+          permite abordar desafíos de programación con confianza y eficacia.
+        </p>
+        <p>
+          Manejo distintas tecnologías para Frontend, como podrían serlo{" "}
+          <b>HTML</b>, <b>CSS</b>, <b>Javascript</b> y <b>Typescript</b>.
+          Respecto al Backend, utilizo <b>Node.js</b> junto con <b>Express</b> y{" "}
+          <b>MongoDB</b>, aunque también tengo conocimientos en bases de datos
+          relacionales <b>SQL</b>.
+        </p>
+        <p>
+          Debido a las capacidades que ofrecen, utilizo frameworks como{" "}
+          <b>React</b>, <b>Next.js</b> y <b>Firebase</b> para facilitar mi
+          trabajo como desarrollador.
+        </p>
+        <LinksContacto />
       </div>
     </div>
   );

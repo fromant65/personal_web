@@ -7,16 +7,16 @@ body {
     Colores: para los fondos y tipografías se van a usar colores neutrales
     Los colores main y dark se van a usar para cartas y contenido
     */
-    --bg-color: #101010;
-    --bg-light: #282828;
+    --bg-color: #202020;
+    --bg-light: #383838;
     --text-color: #f8f8f8;
     --text-color2: #e8e8e8;
-    --main1: #75EBB5;
+    --main1: #85e7bb;
     --main2: #E6B170;
-    --main3: #6E65E6;
-    --dark1: #5A997D;
+    --main3: #9892e9;
+    --dark1: #689e86;
     --dark2: #b9813c;
-    --dark3: #423C99;
+    --dark3: #6460a1;
 
     background-color: var(--bg-color);
     padding: 0;

@@ -7,6 +7,11 @@
     text-align: center;
 }
 
+.cursos__container p {
+    padding: 0.10rem;
+    margin: 0;
+}
+
 .cursos__container b {
     color: var(--main3);
 }

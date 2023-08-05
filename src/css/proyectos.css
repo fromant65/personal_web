@@ -15,20 +15,20 @@
 .proyectos__container section:nth-child(3n) {
     background-color: var(--dark1);
     --card-text-color: var(--main1);
-    --link-color: var(--dark1);
+    --link-color: var(--main1);
 }
 
 .proyectos__container section:nth-child(3n+1) {
     background-color: var(--dark2);
     --card-text-color: var(--main2);
-    --link-color: var(--dark2);
+    --link-color: var(--main2);
 }
 
 .proyectos__container section:nth-child(3n+2) {
 
     background-color: var(--dark3);
     --card-text-color: var(--main3);
-    --link-color: var(--dark3);
+    --link-color: var(--main3);
 }
 
 .proyecto__container {
@@ -39,20 +39,41 @@
 }
 
 .proyecto__titulo {
-    color: var(--card-text-color);
+    color: var(--text-color2);
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--link-color);
 }
 
+.proyecto__links__container {
+    display: flex;
+}
+
 .proyecto__link,
 .proyecto__repositorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
     padding: 0.5rem;
     color: var(--link-color);
     transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.proyecto__link__icon {
+    display: block;
 }
 
 .proyecto__link:hover,
 .proyecto__repositorio:hover {
     color: var(--text-color);
     cursor: pointer
+}
+
+.proyecto__link p,
+.proyecto__repositorio p {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
 }

@@ -48,7 +48,6 @@
     color: var(--main2);
 }
 
-.info__contact__logo {
-    height: 2rem;
-    margin-right: 2rem;
+.info__icon {
+    padding-right: 1rem;
 }

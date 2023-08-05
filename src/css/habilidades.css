@@ -3,19 +3,19 @@
     text-align: justify;
     width: 100%;
     padding: 0;
-    display: flex !important;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.habilidad-container {
-    padding: 20px;
-    margin: 10px;
+.habilidades__stack {
+    padding: 1rem;
+    margin: 0.5rem;
     background-color: var(--bg-light);
-    border-radius: 10px;
-    width: fit-content;
+    border-radius: 0.5rem;
 }
 
-.habilidad-logo {
-    height: 100px;
+.habilidades__names {
+    color: var(--main1);
+}
+
+.habilidades__icon {
+    padding: 0.2rem 0.5rem;
 }

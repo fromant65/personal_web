@@ -26,6 +26,15 @@
     color: var(--main1);
 }
 
+.nav__return .nav__return_text,
+.nav__forward .nav__forward_text {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
 .nav__dropdown {
     padding: 20px 0px;
     background-color: var(--bg-color);
