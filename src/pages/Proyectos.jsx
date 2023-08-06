@@ -19,7 +19,6 @@ const Proyectos = () => {
               dentro del almacenamiento del dispositivo, darle un nombre y hacer
               click en "Upload Image".'
           link={"https://imagescrud-de0a6.web.app/"}
-          repositorio={"https://github.com/fromant65/images-crud"}
         />
         <ProyectLayout
           titulo="Version SQL - Frontend"
@@ -42,7 +41,13 @@ const Proyectos = () => {
             "Esta aplicación web nos permite tener un chat en tiempo real y diversas salas anónimas donde hablar. Está hecho con Node.js y utiliza Express y Socket.io."
           }
           link={"https://realtime-chat-xqpq.onrender.com/"}
-          repositorio={"https://github.com/fromant65/Realtime-Chat"}
+        />
+        <ProyectLayout
+          titulo={"Versión Firebase"}
+          descripcion={
+            "También implementé una versión con Firebase que tiene la opción de Register y Login, además de fijar salas para acceder facilmente a ellas."
+          }
+          link={"https://chat-fomant.firebaseapp.com/"}
         />
       </section>
       <section className="proyectos__sorting-visualizer">
