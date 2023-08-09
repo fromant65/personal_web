@@ -60,6 +60,16 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/sorting-visualizer"}
         />
       </section>
+      <section>
+        <ProyectLayout
+          titulo={"Interactive Map"}
+          descripcion={
+            "Esta app es un mapa hecho en canvas donde se puede seleccionar y deseleccionar regiones haciendo click en ellas. Aplica POO."
+          }
+          link={"https://interactive-map-fromant.netlify.app/"}
+          repositorio={"https://github.com/fromant65/Interactive_Map"}
+        />
+      </section>
 
       <section className="proyectos__textbook">
         <ProyectLayout

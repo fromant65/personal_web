@@ -8,7 +8,6 @@ import {
   SiMongodb,
   SiMysql,
   SiFirebase,
-  SiJest,
   SiNextdotjs,
   SiTypescript,
 } from "react-icons/si";
@@ -75,10 +74,8 @@ const Cursos = () => {
         </div>
         <div className="cursos__item">
           Curso de <b>Test Driven Development</b> con Javascript, React y Vitest
-          - Midulive (Youtube)
-          <div>
-            <SiJest className="cursos__item__logo" size={logoSize} />
-          </div>
+          - Midulive (Youtube) Curso de <b>POO</b> con <b>PYTHON</b> desde CERO
+          (Completo) - Soy Dalto (Youtube)
         </div>
       </div>
     </div>
