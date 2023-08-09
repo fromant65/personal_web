@@ -73,9 +73,14 @@ const Cursos = () => {
           </div>
         </div>
         <div className="cursos__item">
-          Curso de <b>Test Driven Development</b> con Javascript, React y Vitest
-          - Midulive (Youtube) Curso de <b>POO</b> con <b>PYTHON</b> desde CERO
-          (Completo) - Soy Dalto (Youtube)
+          <p>
+            Curso de <b>Test Driven Development</b> con Javascript, React y
+            Vitest - Midulive (Youtube){" "}
+          </p>
+          <p>
+            Curso de <b>POO</b> con <b>PYTHON</b> desde CERO (Completo) - Soy
+            Dalto (Youtube)
+          </p>
         </div>
       </div>
     </div>
