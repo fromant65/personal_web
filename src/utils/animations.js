@@ -1,3 +1,5 @@
+const animationDuration = 400;
+
 export function esconderPaginaIzq(pagina) {
   let currentPageContainer = document.querySelector(`.${pagina}__container`);
   currentPageContainer.animate(
@@ -6,14 +8,14 @@ export function esconderPaginaIzq(pagina) {
       { transform: "translateX(-100vw)", opacity: 0 },
     ],
     {
-      duration: 500,
+      duration: animationDuration,
       fill: "forwards",
       easing: "ease",
     }
   );
   setTimeout(() => {
     currentPageContainer.style.display = "none";
-  }, 500);
+  }, animationDuration);
 }
 
 export function esconderPaginaDer(pagina) {
@@ -30,14 +32,14 @@ export function esconderPaginaDer(pagina) {
       },
     ],
     {
-      duration: 500,
+      duration: animationDuration,
       fill: "forwards",
       easing: "ease",
     }
   );
   setTimeout(() => {
     currentPageContainer.style.display = "none";
-  }, 500);
+  }, animationDuration);
 }
 
 export function mostrarPaginaIzq(pagina) {
@@ -49,7 +51,7 @@ export function mostrarPaginaIzq(pagina) {
       { transform: "translateX(0)", opacity: 1 },
     ],
     {
-      duration: 500,
+      duration: animationDuration,
       fill: "forwards",
       easing: "ease",
     }
@@ -73,7 +75,7 @@ export function mostrarPaginaDer(pagina) {
       },
     ],
     {
-      duration: 500,
+      duration: animationDuration,
       fill: "forwards",
       easing: "ease",
     }

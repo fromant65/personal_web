@@ -12,21 +12,15 @@ import Formacion from "./pages/Formacion";
 import Habilidades from "./pages/Habilidades";
 import Info from "./pages/Info";
 import Proyectos from "./pages/Proyectos";
+
+//Utils
 import {
   esconderPaginaDer,
   esconderPaginaIzq,
   mostrarPaginaDer,
   mostrarPaginaIzq,
-} from "./animations";
-
-const links = [
-  "inicio",
-  "proyectos",
-  "formacion",
-  "cursos",
-  "habilidades",
-  "info",
-];
+} from "./utils/animations";
+import { links } from "./utils/pages";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("inicio");

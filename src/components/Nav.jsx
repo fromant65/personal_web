@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import "./../css/nav.css";
-import { esconderPaginaIzq, mostrarPaginaIzq } from "../animations";
+import { esconderPaginaIzq, mostrarPaginaIzq } from "../utils/animations";
 
 const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
   const arrowSize = 20;
