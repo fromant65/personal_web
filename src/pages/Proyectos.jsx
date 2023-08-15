@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import "./../css/proyectos.css";
 import ProyectLayout from "../components/ProyectLayout";
 // import proyectos from "../data/projects.json";
@@ -77,42 +76,6 @@ const Proyectos = () => {
           stack={["javascript", "css", "react"]}
         />
       </section>
-      {/*
-<section className="proyectos__textbook">
-        <ProyectLayout
-          titulo={"Textbook"}
-          descripcion={
-            "Textbook es un proyecto que busca simular una interfaz similar a la de una red social. Posee diversas funciones como registro, log in y log out, chat, perfil, busqueda de usuarios, creación de publicaciones, etc. Está hecho en Node.js, utilizando Express y MongoDB. El proyecto sigue en fase de desarrollo."
-          }
-          repositorio={"https://github.com/fromant65/Red_Social"}
-        />
-        <ProyectLayout
-          titulo={"Textbook - React version - Frontend"}
-          descripcion={
-            "Tambien desarrollé una versión de Textbook que utiliza React en el Frontend, y tiene algunas características distintivas respecto a la otra versión"
-          }
-          repositorio={"https://github.com/fromant65/textbookFront"}
-        />
-        <ProyectLayout
-          titulo={"Textbook - React version - Backend"}
-          descripcion={
-            "Aquí podemos encontrar el repositorio al Backend del proyecto en su versión con React"
-          }
-          repositorio={"https://github.com/fromant65/textbookBack"}
-        />
-      </section>
-
-      <section className="proyectos__4-en-linea">
-        <ProyectLayout
-          titulo={"4 en línea"}
-          descripcion={
-            "Esta app es el clásico juego 4 en linea donde dos jugadores ponen fichas en un tablero e intentan alinear 4 para ganar. Utiliza Socket.io para que los movimientos se puedan ver en tiempo real en el tablero si se juega desde dos computadoras distintas. La aplicación aún está en una fase temprana de desarrollo."
-          }
-          repositorio={"https://github.com/fromant65/4-en-Raya"}
-        />
-      </section>
-*/}
-
       <section className="proyectos__conway-life">
         <ProyectLayout
           titulo={"Conway Life"}
@@ -158,17 +121,6 @@ const Proyectos = () => {
           stack={["javascript", "react", "css"]}
         />
       </section>
-      {/*
-      <section>
-        <ProyectLayout
-          titulo={"Calendario"}
-          descripcion={
-            "Esta página es una app simple de calendario hecha con React"
-          }
-          repositorio={"https://github.com/fromant65/calendar"}
-        />
-      </section>
-      */}
     </div>
   );
 };

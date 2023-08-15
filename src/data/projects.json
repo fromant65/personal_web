@@ -8,35 +8,35 @@
     "link": "https://imagescrud-de0a6.web.app/"
   },
   {
-    "titulo": "Images Crud",
-    "title": "",
-    "description": "",
-    "descripcion": "",
-    "repositorio": "",
+    "titulo": "Textbook",
+    "title": "Textbook",
+    "description": "---",
+    "descripcion": "Textbook es un proyecto que busca simular una interfaz similar a la de una red social. Posee diversas funciones como registro, log in y log out, chat, perfil, busqueda de usuarios, creación de publicaciones, etc. Está hecho en Node.js, utilizando Express y MongoDB. El proyecto sigue en fase de desarrollo.",
+    "repositorio": "https://github.com/fromant65/Red_Social",
     "link": ""
   },
   {
-    "titulo": "Images Crud",
-    "title": "",
+    "titulo": "Textbook - React version - Frontend",
+    "title": "Textbook - React version - Frontend",
     "description": "",
-    "descripcion": "",
-    "repositorio": "",
+    "descripcion": "Tambien desarrollé una versión de Textbook que utiliza React en el Frontend, y tiene algunas características distintivas respecto a la otra versión",
+    "repositorio": "https://github.com/fromant65/textbookFront",
     "link": ""
   },
   {
-    "titulo": "Images Crud",
-    "title": "",
+    "titulo": "Textbook - React version - Backend",
+    "title": "Textbook - React version - Backend",
     "description": "",
-    "descripcion": "",
-    "repositorio": "",
+    "descripcion": "Aquí podemos encontrar el repositorio al Backend del proyecto en su versión con React",
+    "repositorio": "https://github.com/fromant65/textbookBack",
     "link": ""
   },
   {
-    "titulo": "Images Crud",
-    "title": "",
+    "titulo": "4 en línea",
+    "title": "Connect 4",
     "description": "",
-    "descripcion": "",
-    "repositorio": "",
+    "descripcion": "Esta app es el clásico juego 4 en linea donde dos jugadores ponen fichas en un tablero e intentan alinear 4 para ganar. Utiliza Socket.io para que los movimientos se puedan ver en tiempo real en el tablero si se juega desde dos computadoras distintas. La aplicación aún está en una fase temprana de desarrollo.",
+    "repositorio": "https://github.com/fromant65/4-en-Raya",
     "link": ""
   },
   {
