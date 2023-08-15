@@ -12,6 +12,12 @@ import Formacion from "./pages/Formacion";
 import Habilidades from "./pages/Habilidades";
 import Info from "./pages/Info";
 import Proyectos from "./pages/Proyectos";
+import {
+  esconderPaginaDer,
+  esconderPaginaIzq,
+  mostrarPaginaDer,
+  mostrarPaginaIzq,
+} from "./animations";
 
 const links = [
   "inicio",
@@ -23,6 +29,10 @@ const links = [
 ];
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("inicio");
+  const [initialX, setInitialX] = useState(null);
+  const [initialY, setInitialY] = useState(null);
+
   useEffect(() => {
     WebFont.load({
       google: {
@@ -30,10 +40,6 @@ function App() {
       },
     });
   }, []);
-
-  const [currentPage, setCurrentPage] = useState("inicio");
-  const [initialX, setInitialX] = useState(null);
-  const [initialY, setInitialY] = useState(null);
 
   useEffect(() => {
     document.querySelector(`.${currentPage}__container`).style.transform =
@@ -45,87 +51,15 @@ function App() {
       links.indexOf(currentPage) > 0
         ? links[index - 1]
         : links[links.length - 1];
-    //console.log(index, pagina, "atras");
-    let currentPageContainer = document.querySelector(
-      `.${currentPage}__container`
-    );
-    let prevPageContainer = document.querySelector(`.${prevPage}__container`);
-    currentPageContainer.animate(
-      [
-        {
-          transform: "translateX(0)",
-          opacity: "1",
-        },
-        {
-          transform: "translateX(100vw)",
-          opacity: "0",
-        },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-    setTimeout(() => {
-      currentPageContainer.style.display = "none";
-    }, 500);
-    prevPageContainer.style.display = "block";
-    prevPageContainer.animate(
-      [
-        {
-          transform: "translateX(-100vw)",
-          opacity: "0",
-          display: "none",
-        },
-        {
-          transform: "translateX(0)",
-          opacity: "1",
-          display: "block",
-        },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-
+    esconderPaginaDer(currentPage);
+    mostrarPaginaDer(prevPage);
     setCurrentPage(links[links.indexOf(prevPage)]);
   }
+
   function irAdelante(index) {
     let nextPage = links.indexOf(currentPage) < 5 ? links[index + 1] : links[0];
-
-    let currentPageContainer = document.querySelector(
-      `.${currentPage}__container`
-    );
-    let nextPageContainer = document.querySelector(`.${nextPage}__container`);
-    currentPageContainer.animate(
-      [
-        { transform: "translateX(0)", opacity: 1 },
-        { transform: "translateX(-100vw)", opacity: 0 },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-    setTimeout(() => {
-      currentPageContainer.style.display = "none";
-    }, 500);
-    nextPageContainer.style.display = "block";
-    nextPageContainer.animate(
-      [
-        { transform: "translateX(100vw)", opacity: 0 },
-        { transform: "translateX(0)", opacity: 1 },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
+    esconderPaginaIzq(currentPage);
+    mostrarPaginaIzq(nextPage);
     setCurrentPage(links[links.indexOf(nextPage)]);
   }
 

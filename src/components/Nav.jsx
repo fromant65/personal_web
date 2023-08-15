@@ -2,42 +2,15 @@ import React from "react";
 import { useState } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import "./../css/nav.css";
+import { esconderPaginaIzq, mostrarPaginaIzq } from "../animations";
 
 const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
   const arrowSize = 20;
 
   function gotoPage(link) {
     let nextPage = links[links.indexOf(link)];
-    let currentPageContainer = document.querySelector(`.${pagina}__container`);
-    let nextPageContainer = document.querySelector(`.${nextPage}__container`);
-    currentPageContainer.animate(
-      [
-        { transform: "translateX(0)", opacity: "1" },
-        { transform: "translateX(-100vw)", opacity: "0" },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
-
-    setTimeout(() => {
-      currentPageContainer.style.display = "none";
-    }, 500);
-    nextPageContainer.style.display = "block";
-
-    nextPageContainer.animate(
-      [
-        { transform: "translateX(100vw)", opacity: "0", display: "none" },
-        { transform: "translateX(0)", opacity: "1", display: "block" },
-      ],
-      {
-        duration: 500,
-        fill: "forwards",
-        easing: "ease",
-      }
-    );
+    esconderPaginaIzq(pagina);
+    mostrarPaginaIzq(nextPage);
     setPagina(nextPage);
     document.querySelector(".nav__menu").classList.remove("nav__open-menu");
     setIsMenuOpen(false);
@@ -68,9 +41,8 @@ const Nav = ({ pagina, setPagina, links, irAtras, irAdelante }) => {
         <p className="nav__return_text">Anterior</p>
       </button>
       <div className="nav__dropdown" onClick={() => switchMenu()}>
-        {pagina.charAt(0).toUpperCase() + pagina.slice(1)}
+        {capitalize(pagina)}
       </div>
-
       <button
         className="nav__forward"
         onClick={() => irAdelante(links.indexOf(pagina))}
