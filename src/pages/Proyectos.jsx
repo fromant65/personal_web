@@ -70,8 +70,8 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/Interactive_Map"}
         />
       </section>
-
-      <section className="proyectos__textbook">
+      {/*
+<section className="proyectos__textbook">
         <ProyectLayout
           titulo={"Textbook"}
           descripcion={
@@ -104,6 +104,8 @@ const Proyectos = () => {
           repositorio={"https://github.com/fromant65/4-en-Raya"}
         />
       </section>
+*/}
+
       <section className="proyectos__conway-life">
         <ProyectLayout
           titulo={"Conway Life"}
