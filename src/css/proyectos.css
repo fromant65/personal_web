@@ -54,7 +54,7 @@
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
     color: var(--link-color);
     transition: all 0.5s ease;
     text-decoration: none;
@@ -76,4 +76,13 @@
     padding: 0;
     margin: 0;
     font-size: 0.75rem;
+}
+
+.proyecto__stack {
+    display: block;
+    color: var(--link-color);
+}
+
+.proyecto__stack * {
+    padding-right: 0.5rem;
 }

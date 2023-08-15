@@ -19,12 +19,14 @@ const Proyectos = () => {
               dentro del almacenamiento del dispositivo, darle un nombre y hacer
               click en "Upload Image".'
           link={"https://imagescrud-de0a6.web.app/"}
+          stack={["react", "firebase", "css", "javascript"]}
         />
         <ProyectLayout
           titulo="Version SQL - Frontend"
           descripcion="He hecho tambien una versión utilizando SQL para la base de
                 datos. El repositorio del frontend se encuentra en el siguiente link:"
           repositorio={"https://github.com/fromant65/images-crud-sql-front"}
+          stack={["javascript", "react", "css"]}
         />
         <ProyectLayout
           titulo={"Version SQL - Backend"}
@@ -32,6 +34,7 @@ const Proyectos = () => {
             "El repositorio del backend se encuentra en el siguiente link:"
           }
           repositorio={"https://github.com/fromant65/images-crud-sql-back"}
+          stack={["javascript", "nodejs", "express", "sql"]}
         />
       </section>
       <section className="proyectos__chat-realtime">
@@ -41,6 +44,7 @@ const Proyectos = () => {
             "Esta aplicación web nos permite tener un chat en tiempo real y diversas salas anónimas donde hablar. Está hecho con Node.js y utiliza Express y Socket.io."
           }
           link={"https://realtime-chat-xqpq.onrender.com/"}
+          stack={["html", "css", "javascript", "nodejs", "express", "mongodb"]}
         />
         <ProyectLayout
           titulo={"Versión Firebase"}
@@ -48,6 +52,7 @@ const Proyectos = () => {
             "También implementé una versión con Firebase que tiene la opción de Register y Login, además de fijar salas para acceder facilmente a ellas."
           }
           link={"https://chat-fomant.firebaseapp.com/"}
+          stack={["javascript", "css", "react", "firebase"]}
         />
       </section>
       <section className="proyectos__sorting-visualizer">
@@ -58,6 +63,7 @@ const Proyectos = () => {
           }
           link={"https://sorting-visualizer-fromant.netlify.app/"}
           repositorio={"https://github.com/fromant65/sorting-visualizer"}
+          stack={["react", "javascript", "css"]}
         />
       </section>
       <section>
@@ -68,6 +74,7 @@ const Proyectos = () => {
           }
           link={"https://interactive-map-fromant.netlify.app/"}
           repositorio={"https://github.com/fromant65/Interactive_Map"}
+          stack={["javascript", "css", "react"]}
         />
       </section>
       {/*
@@ -114,6 +121,7 @@ const Proyectos = () => {
           }
           link={"https://conwaylife.netlify.app/"}
           repositorio={"https://github.com/fromant65/conwaylife"}
+          stack={["javascript", "css", "react"]}
         />
       </section>
       <section>
@@ -125,6 +133,7 @@ const Proyectos = () => {
           repositorio={
             "https://github.com/fromant65/japanese_sentence_generator"
           }
+          stack={["javascript", "nodejs"]}
         />
       </section>
       <section>
@@ -135,6 +144,7 @@ const Proyectos = () => {
           }
           link={"https://password-generator-fromant.netlify.app/"}
           repositorio={"https://github.com/fromant65/Password_Generator/"}
+          stack={["react", "javascript", "css"]}
         />
       </section>
       <section>
@@ -145,6 +155,7 @@ const Proyectos = () => {
           }
           link={"https://torneo-simulador-fromant.netlify.app/"}
           repositorio={"https://github.com/fromant65/Torneo_Simulador"}
+          stack={["javascript", "react", "css"]}
         />
       </section>
       {/*
