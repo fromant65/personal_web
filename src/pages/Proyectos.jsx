@@ -20,21 +20,6 @@ const Proyectos = () => {
           link={"https://imagescrud-de0a6.web.app/"}
           stack={["react", "firebase", "css", "javascript"]}
         />
-        <ProyectLayout
-          titulo="Version SQL - Frontend"
-          descripcion="He hecho tambien una versión utilizando SQL para la base de
-                datos. El repositorio del frontend se encuentra en el siguiente link:"
-          repositorio={"https://github.com/fromant65/images-crud-sql-front"}
-          stack={["javascript", "react", "css"]}
-        />
-        <ProyectLayout
-          titulo={"Version SQL - Backend"}
-          descripcion={
-            "El repositorio del backend se encuentra en el siguiente link:"
-          }
-          repositorio={"https://github.com/fromant65/images-crud-sql-back"}
-          stack={["javascript", "nodejs", "express", "sql"]}
-        />
       </section>
       <section className="proyectos__chat-realtime">
         <ProyectLayout
