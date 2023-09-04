@@ -39,6 +39,17 @@ const Proyectos = () => {
           stack={["javascript", "css", "react", "firebase"]}
         />
       </section>
+      <section>
+        <ProyectLayout
+          titulo={"Ultimate Tic Tac Toe"}
+          descripcion={
+            "Esta aplicación está hecha con Svelte y Typescript y nos permite jugar al juego Super TaTeTi, el cual consta de un tablero de 3x3 tableros de TaTeTi, los cuales se marcan con una X o una O cuando el jugador gana en dicho tablero. El jugador que marque 3 tableros en linea o tenga más tableros marcados cuando no haya más movimientos posibles, gana la partida. Al hacer un movimiento, si es posible, el jugador debe jugar en el tablero correspondiente a la casilla que marcó su adversario. Si no es posible, puede elegir en qué tablero jugar."
+          }
+          link={"https://ultimate-tic-tac-toe-fromant.netlify.app/"}
+          stack={["javascript", "html", "css", "svelte", "typescript"]}
+          repositorio={"https://github.com/fromant65/superTicTacToe"}
+        />
+      </section>
       <section className="proyectos__sorting-visualizer">
         <ProyectLayout
           titulo={"Sorting Visualizer"}

@@ -10,6 +10,7 @@ import {
   SiFirebase,
   SiNextdotjs,
   SiTypescript,
+  SiSvelte,
 } from "react-icons/si";
 
 const Cursos = () => {
@@ -42,11 +43,13 @@ const Cursos = () => {
           <p>
             Full <b>React</b> Course 2020 — freeCodeCamp.org
           </p>
+          The <b>Svelte</b> Crash Course — Laith Academy
           <div>
             <FaNodeJs className="cursos__item__logo" size={logoSize} />
             <SiExpress className="cursos__item__logo" size={logoSize} />
             <SiMongodb className="cursos__item__logo" size={logoSize} />
             <FaReact className="cursos__item__logo" size={logoSize} />
+            <SiSvelte className="cursos__item__logo" size={logoSize} />
           </div>
         </div>
 

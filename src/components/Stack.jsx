@@ -13,6 +13,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiSqlite } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiSvelte } from "react-icons/si";
 
 const Stack = ({ stack }) => {
   function chooseIcon(tool) {
@@ -57,6 +58,8 @@ const Stack = ({ stack }) => {
       case "NEXTJS":
         icon = <TbBrandNextjs size={size} />;
         break;
+      case "SVELTE":
+        icon = <SiSvelte size={size} />;
       default:
         <div></div>;
         break;

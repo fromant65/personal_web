@@ -15,6 +15,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiSqlite } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiSvelte } from "react-icons/si";
 
 const Habilidades = () => {
   const iconSize = 30;
@@ -35,10 +36,11 @@ const Habilidades = () => {
       <div className="habilidades__stack frontend-stack">
         <p>
           Herramientas de Frontend:{" "}
-          <b className="habilidades__names">React, Next.js</b>
+          <b className="habilidades__names">React, Next.js, Svelte</b>
         </p>
         <FaReact className="habilidades__icon" size={iconSize} />
         <TbBrandNextjs className="habilidades__icon" size={iconSize} />
+        <SiSvelte className="habilidades__icon" size={iconSize} />
       </div>
       <div className="habilidades__stack backend-stack">
         <p>
