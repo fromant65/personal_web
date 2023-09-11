@@ -33,7 +33,7 @@ const Inicio = () => {
         </p>
         <p>
           Debido a las capacidades que ofrecen, utilizo frameworks como{" "}
-          <b>React</b>, <b>Next.js</b> y <b>Firebase</b> para facilitar mi
+          <b>React</b>, <b>Svelte</b> y <b>Firebase</b> para facilitar mi
           trabajo como desarrollador.
         </p>
         <LinksContacto />
