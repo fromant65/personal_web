@@ -66,7 +66,7 @@ const Habilidades = () => {
       </div>
       <div className="habilidades__stack languages-stack">
         <p>
-          Otros lenguajes: <b className="habilidades__names"> Python</b>
+          Otros lenguajes: <b className="habilidades__names"> Python, C</b>
         </p>
         <FaPython className="habilidades__icon" size={iconSize} />
         <FaC className="habilidades__icon" size={iconSize} />
