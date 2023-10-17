@@ -16,6 +16,7 @@ import { SiSqlite } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiSvelte } from "react-icons/si";
+import { FaC } from "react-icons/fa6";
 
 const Habilidades = () => {
   const iconSize = 30;
@@ -68,6 +69,7 @@ const Habilidades = () => {
           Otros lenguajes: <b className="habilidades__names"> Python</b>
         </p>
         <FaPython className="habilidades__icon" size={iconSize} />
+        <FaC className="habilidades__icon" size={iconSize} />
       </div>
     </div>
   );

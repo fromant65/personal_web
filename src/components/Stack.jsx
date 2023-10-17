@@ -14,6 +14,7 @@ import { SiSqlite } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiSvelte } from "react-icons/si";
+import { FaC } from "react-icons/fa6";
 
 const Stack = ({ stack }) => {
   function chooseIcon(tool) {
@@ -60,6 +61,8 @@ const Stack = ({ stack }) => {
         break;
       case "SVELTE":
         icon = <SiSvelte size={size} />;
+      case "C":
+        icon = <FaC size={size} />;
       default:
         <div></div>;
         break;

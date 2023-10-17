@@ -39,6 +39,16 @@ const Proyectos = () => {
           stack={["javascript", "css", "react", "firebase"]}
         />
       </section>
+      <section className="proyectos__data-structures">
+        <ProyectLayout
+          titulo={"Data Structures"}
+          descripcion={
+            "Este proyecto es una librería de estructuras de datos implementada en C. Cuenta con estructuras como listas, colas, pilas, árboles, matrices, entre otras."
+          }
+          stack={["C"]}
+          repositorio={"https://github.com/fromant65/data_structures"}
+        ></ProyectLayout>
+      </section>
       <section>
         <ProyectLayout
           titulo={"Ultimate Tic Tac Toe"}
