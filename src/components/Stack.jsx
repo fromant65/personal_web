@@ -21,7 +21,7 @@ const Stack = ({ stack }) => {
     if (!tool) return <div></div>;
     tool = tool.toUpperCase();
     let icon;
-    let size = 25;
+    let size = 30;
     switch (tool) {
       case "HTML":
         icon = <FaHtml5 size={size} />;
@@ -70,11 +70,13 @@ const Stack = ({ stack }) => {
     return icon;
   }
   return (
-    <div>
+    <div >
       {stack
         ? stack.map((tool) => {
-            return chooseIcon(tool);
-          })
+          return <div style={{display: "inline-block"}} key={`${tool}${Math.random()}`}>
+          {chooseIcon(tool)}
+          </div>
+        })
         : ""}
     </div>
   );

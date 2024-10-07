@@ -2,7 +2,7 @@ export const links = [
   "inicio",
   "proyectos",
   "formacion",
-  "cursos",
+  /*"cursos",*/
   "habilidades",
   "info",
 ];

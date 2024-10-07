@@ -24,6 +24,7 @@
     background-color: var(--bg-light);
     cursor: pointer;
     color: var(--main1);
+    transition: 0.5s ease-out;
 }
 
 .nav__return .nav__return_text,

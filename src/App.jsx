@@ -51,7 +51,7 @@ function App() {
   }
 
   function irAdelante(index) {
-    let nextPage = links.indexOf(currentPage) < 5 ? links[index + 1] : links[0];
+    let nextPage = links.indexOf(currentPage) < links.length-1 ? links[index + 1] : links[0];
     esconderPaginaIzq(currentPage);
     mostrarPaginaIzq(nextPage);
     setCurrentPage(links[links.indexOf(nextPage)]);
@@ -94,7 +94,7 @@ function App() {
         <Inicio></Inicio>
         <Proyectos></Proyectos>
         <Formacion></Formacion>
-        <Cursos></Cursos>
+        {/*<Cursos></Cursos>*/}
         <Habilidades></Habilidades>
         <Info></Info>
       </div>

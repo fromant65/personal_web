@@ -19,3 +19,29 @@
 .habilidades__icon {
     padding: 0.2rem 0.5rem;
 }
+
+.habilidades__titulo {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.habilidades__lista {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidades__item {
+    border-radius: 8px;
+    margin: 0 15px;
+    padding: 4px;
+}
+
+.habilidades__names:hover{
+    color: var(--dark3);
+}
+
+.habilidades__names {
+    color: var(--main3);
+    transition: 0.3s ease-out;
+}

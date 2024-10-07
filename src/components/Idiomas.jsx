@@ -7,10 +7,9 @@ const Idiomas = () => {
       <div>
         <div id="idiomas-esp">
           <p>
-            <img className="info-idioma-flag" src="argentina.png" alt="" />{" "}
-            Español:
-          </p>{" "}
-          Nativo
+            <img className="info-idioma-flag" src="argentina.png" alt="" />{"  "}
+            Español: Nativo
+          </p>
         </div>
         <div id="idiomas-eng">
           <p>
@@ -27,7 +26,7 @@ const Idiomas = () => {
             <b>Reading:</b> Avanzado
           </div>
           <div>
-            <b>Speaking:</b> Básico
+            <b>Speaking:</b> Intermedio
           </div>
         </div>
       </div>

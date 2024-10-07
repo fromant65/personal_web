@@ -16,7 +16,7 @@ body {
     --main3: #9892e9;
     --dark1: #689e86;
     --dark2: #b9813c;
-    --dark3: #6460a1;
+    --dark3: #7873c2;
 
     background-color: var(--bg-color);
     padding: 0;
@@ -46,6 +46,7 @@ body {
     transform: translate(-100vw);
     opacity: 0;
     padding: 20px;
+    transition: height 0.4s ease;
 }
 
 .inicio__container {

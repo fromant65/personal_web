@@ -18,23 +18,20 @@ const Inicio = () => {
       {/*Cambiar esta lista por una descripción corta que resuma estos datos */}
       <div className="inicio__resumen">
         <p>
-          Soy un <b>Desarrollador Web</b> apasionado, con un talento especial
-          para resolver problemas complejos y crear soluciones innovadoras. Mi
-          experiencia y <b>reconocimientos académicos en olimpiadas</b> me ha
-          brindado una <b>base sólida en lógica y razonamiento</b>, lo que me
-          permite abordar desafíos de programación con confianza y eficacia.
+          Soy <b>Desarrollador Web</b> y me encanta resolver problemas complejos 
+          con soluciones creativas. Mis más de <b>5 años de experiencia</b> en el 
+          desarrollo y <b>reconocimientos académicos</b>, además de mis estudios formales 
+          en <b>Ciencias de la Computación</b> me permiten desenvolverme con 
+          confianza en los proyectos que resuelvo.
         </p>
         <p>
-          Manejo distintas tecnologías para Frontend, como podrían serlo{" "}
-          <b>HTML</b>, <b>CSS</b>, <b>Javascript</b> y <b>Typescript</b>.
-          Respecto al Backend, utilizo <b>Node.js</b> junto con <b>Express</b> y{" "}
-          <b>MongoDB</b>, aunque también tengo conocimientos en bases de datos
-          relacionales <b>SQL</b>.
+          Me especializo en el <b>desarrollo Backend</b> con herramientas como
+          el <b>Stack T3</b> con <b>SQL</b>, aunque también manejo bases de datos
+          No SQL como <b>MongoDB</b> o <b>Firebase</b>
         </p>
         <p>
-          Debido a las capacidades que ofrecen, utilizo frameworks como{" "}
-          <b>React</b>, <b>Svelte</b> y <b>Firebase</b> para facilitar mi
-          trabajo como desarrollador.
+          Para resolver cuestiones de Frontend utilizo principalmente <b>React</b>,{" "} 
+          <b>Next JS</b> y <b>Tailwind CSS</b>
         </p>
         <LinksContacto />
       </div>
